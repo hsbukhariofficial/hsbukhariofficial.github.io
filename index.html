@@ -32,7 +32,7 @@ header h1 {
 }
 
 header p {
-    font-size: 19px;
+    font-size: 18px;
     margin-top: 12px;
 }
 
@@ -49,6 +49,7 @@ h2 {
     color: #0d6efd;
     text-align: center;
     font-size: 28px;
+    margin-bottom: 20px;
 }
 
 .business-profile {
@@ -57,11 +58,20 @@ h2 {
     line-height: 1.8;
 }
 
+.business-image,
+.license-image {
+    display: block;
+    width: 100%;
+    max-width: 850px;
+    margin: 20px auto;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.12);
+}
+
 .services {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 15px;
-    margin-top: 20px;
 }
 
 .service {
@@ -71,6 +81,17 @@ h2 {
     text-align: center;
     font-size: 18px;
     font-weight: bold;
+}
+
+.why-us {
+    font-size: 18px;
+    line-height: 2;
+}
+
+.licenses {
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.7;
 }
 
 .contact {
@@ -93,12 +114,12 @@ h2 {
     background: #25D366;
 }
 
-.email {
-    background: #0d6efd;
-}
-
 .call {
     background: #198754;
+}
+
+.email {
+    background: #0d6efd;
 }
 
 .site-work {
@@ -108,7 +129,7 @@ h2 {
 .site-work img {
     width: 100%;
     max-width: 850px;
-    border-radius: 10px;
+    border-radius: 12px;
     margin-top: 15px;
 }
 
@@ -150,14 +171,24 @@ footer {
 
 <h1>M Habib Shah Services</h1>
 
-<p>HVAC • Electrical • Plumbing • Panel Installation • Maintenance</p>
+<p>
+HVAC • Electrical • Plumbing • Panel Installation • Maintenance
+</p>
 
 </header>
 
 
+<!-- BUSINESS PROFILE -->
+
 <section>
 
 <h2>Business Profile</h2>
+
+<img
+src="company-profile.png"
+alt="M Habib Shah Business Profile"
+class="business-image"
+>
 
 <p class="business-profile">
 We provide professional HVAC, electrical, plumbing, panel installation
@@ -169,6 +200,8 @@ and customer satisfaction.
 
 </section>
 
+
+<!-- SERVICES -->
 
 <section>
 
@@ -205,11 +238,33 @@ and customer satisfaction.
 </section>
 
 
+<!-- LICENSES -->
+
+<section>
+
+<h2>Licenses & Registrations</h2>
+
+<p class="licenses">
+Our business licenses, registrations and relevant documents
+are available for verification.
+</p>
+
+<img
+src="licenses-registration.png"
+alt="Licenses and Registrations"
+class="license-image"
+>
+
+</section>
+
+
+<!-- WHY CHOOSE US -->
+
 <section>
 
 <h2>Why Choose Us?</h2>
 
-<ul style="font-size:18px; line-height:2;">
+<ul class="why-us">
 
 <li>✔ Quality Work</li>
 
@@ -226,6 +281,8 @@ and customer satisfaction.
 </section>
 
 
+<!-- CONTACT -->
+
 <section>
 
 <h2>Contact Us</h2>
@@ -238,21 +295,21 @@ and customer satisfaction.
 
 <p>📧 MuhammedHabibshah2022@gmail.com</p>
 
-
-<a class="btn whatsapp"
+<a
+class="btn whatsapp"
 href="https://wa.me/923062739157"
 target="_blank">
 WhatsApp
 </a>
 
-
-<a class="btn call"
+<a
+class="btn call"
 href="tel:03062739157">
 Call Us
 </a>
 
-
-<a class="btn email"
+<a
+class="btn email"
 href="mailto:MuhammedHabibshah2022@gmail.com">
 Email Us
 </a>
@@ -262,11 +319,16 @@ Email Us
 </section>
 
 
+<!-- SITE WORK -->
+
 <section class="site-work">
 
 <h2>Our Site Work</h2>
 
-<img src="site-work.jpg" alt="Our Site Work">
+<img
+src="site-work.jpg"
+alt="M Habib Shah Site Work"
+>
 
 </section>
 
