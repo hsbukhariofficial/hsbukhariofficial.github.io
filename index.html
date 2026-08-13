@@ -57,7 +57,7 @@ h2 {
 }
 
 /* Business Profile */
-.profile.png{
+.profile-image {
     width: 100%;
     max-width: 800px;
     display: block;
@@ -86,26 +86,12 @@ h2 {
 }
 
 /* Licenses */
-.licenses {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 15px;
-}
-
-.license {
-    border: 1px solid #e0e0e0;
+.license-image {
+    width: 100%;
+    max-width: 800px;
+    display: block;
+    margin: 20px auto 0;
     border-radius: 10px;
-    padding: 18px;
-    text-align: center;
-    background: #fafafa;
-}
-
-.license h3 {
-    margin: 5px 0 8px;
-    color: #1769e0}
-.license src="licenses-registrations.png" {
-    margin: 0;
-    font-size: 14px;
 }
 
 /* Why Choose Us */
@@ -150,17 +136,12 @@ h2 {
 }
 
 /* Site Work */
-.site-work {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 12px;
-}
-
-.site-work img {
+.site-work-image {
     width: 100%;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 8px;
+    max-width: 800px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
 }
 
 /* Footer */
@@ -181,18 +162,6 @@ footer {
 
     .services {
         grid-template-columns: 1fr;
-    }
-
-    .licenses {
-        grid-template-columns: 1fr;
-    }
-
-    .site-work {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .site-work img {
-        height: 120px;
     }
 
     .card {
@@ -216,9 +185,8 @@ footer {
 
         <h2>Business Profile</h2>
 
-        <!-- Business Profile Image -->
         <img
-            src="business-profile.png"
+            src="company-profile.png"
             alt="M Habib Shah Services Business Profile"
             class="profile-image"
         >
@@ -280,41 +248,11 @@ footer {
             documents are available for verification.
         </p>
 
-        <div class="licenses">
-
-            <div class="license">
-                <h3>Business Registration</h3>
-                <p>
-                    Business registration documents
-                    available for verification.
-                </p>
-            </div>
-
-            <div class="license">
-                <h3>HVAC Services</h3>
-                <p>
-                    HVAC installation and maintenance
-                    service documentation.
-                </p>
-            </div>
-
-            <div class="license">
-                <h3>Electrical Services</h3>
-                <p>
-                    Electrical work and panel installation
-                    related documentation.
-                </p>
-            </div>
-
-            <div class="license">
-                <h3>MEP Services</h3>
-                <p>
-                    Mechanical, electrical and plumbing
-                    service documentation.
-                </p>
-            </div>
-
-        </div>
+        <img
+            src="licenses-registrations.png"
+            alt="Licenses and Registrations"
+            class="license-image"
+        >
 
     </section>
 
@@ -387,17 +325,11 @@ footer {
 
         <h2>Our Site Work</h2>
 
-        <div class="site-work">
-
-            <img src="work1.png" alt="HVAC Site Work">
-
-            <img src="work2.png" alt="Electrical Site Work">
-
-            <img src="work3.png" alt="Plumbing Site Work">
-
-            <img src="work4.png" alt="Panel Installation">
-
-        </div>
+        <img
+            src="site-work.jpg"
+            alt="Our Site Work"
+            class="site-work-image"
+        >
 
     </section>
 
