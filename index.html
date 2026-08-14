@@ -6,6 +6,8 @@
 
 <title>HS Bukhari | HVAC & MEP Services</title>
 
+<meta name="description" content="HS Bukhari Engineering & HVAC Services provides professional HVAC, MEP, electrical, plumbing, panel installation and maintenance services in Karachi.">
+
 <style>
 * {
     box-sizing: border-box;
@@ -18,35 +20,50 @@ body {
     color: #333;
 }
 
+/* HEADER */
 header {
-    background: #1769e0;
+    background: linear-gradient(135deg, #1769e0, #0b4fa8);
     color: white;
     text-align: center;
-    padding: 28px 15px;
+    padding: 30px 15px;
+}
+
+.profile-logo {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+    border-radius: 50%;
+    background: white;
+    padding: 5px;
+    display: block;
+    margin: 0 auto 15px;
 }
 
 header h1 {
     margin: 0;
     font-size: 28px;
+    font-weight: bold;
 }
 
 header p {
-    margin: 8px 0 0;
-    font-size: 14px;
+    margin: 10px 0 0;
+    font-size: 16px;
 }
 
+/* CONTAINER */
 .container {
     max-width: 900px;
     margin: 20px auto;
     padding: 0 12px;
 }
 
+/* CARDS */
 .card {
     background: white;
-    border-radius: 12px;
+    border-radius: 14px;
     padding: 25px;
     margin-bottom: 20px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    box-shadow: 0 3px 12px rgba(0,0,0,0.08);
 }
 
 h2 {
@@ -56,21 +73,14 @@ h2 {
     margin-bottom: 20px;
 }
 
-/* Business Profile */
-.profile-image {
-    width: 100%;
-    max-width: 800px;
-    display: block;
-    margin: 0 auto 20px;
-    border-radius: 10px;
-}
-
+/* BUSINESS PROFILE */
 .profile-text {
     text-align: center;
     line-height: 1.8;
+    font-size: 16px;
 }
 
-/* Services */
+/* SERVICES */
 .services {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -79,28 +89,19 @@ h2 {
 
 .service {
     background: #f2f6fc;
-    padding: 14px;
-    border-radius: 8px;
+    padding: 15px 10px;
+    border-radius: 9px;
     text-align: center;
     font-weight: bold;
 }
 
-/* Licenses */
-.license-image {
-    width: 100%;
-    max-width: 800px;
-    display: block;
-    margin: 20px auto 0;
-    border-radius: 10px;
-}
-
-/* Why Choose Us */
+/* WHY CHOOSE US */
 .why-us {
     line-height: 2;
     font-size: 16px;
 }
 
-/* Contact */
+/* CONTACT */
 .contact {
     text-align: center;
     line-height: 2;
@@ -135,7 +136,7 @@ h2 {
     background: #1769e0;
 }
 
-/* Site Work */
+/* SITE WORK */
 .site-work-image {
     width: 100%;
     max-width: 800px;
@@ -144,7 +145,7 @@ h2 {
     border-radius: 10px;
 }
 
-/* Footer */
+/* FOOTER */
 footer {
     background: #202020;
     color: white;
@@ -154,161 +155,76 @@ footer {
     font-size: 14px;
 }
 
+/* MOBILE */
 @media (max-width: 600px) {
 
     header h1 {
-        font-size: 24px;
+        font-size: 23px;
     }
 
     .services {
-        grid-template-columns: 1f
+        grid-template-columns: 1fr 1fr;
+    }
 
-    </section><!-- Documents Section -->
-<section class="documents-section">
+    .card {
+        padding: 20px 15px;
+    }
 
-    <h2>Professional Documents</h2>
+    .service {
+        font-size: 14px;
+    }
 
-    <div class="documents-grid">
-
-        <!-- Experience Letter -->
-        <div class="document-card">
-
-            <div class="document-icon">📄</div>
-
-            <h3>Experience Letter</h3>
-
-            <p>
-                Professional Experience Letter
-            </p>
-
-            <div class="document-buttons">
-
-                <a href="experience-certificate.png"
-                   target="_blank"
-                   class="view-btn">
-                    View Experience Letter
-                </a>
-
-                <a href="experience-certificate.png"
-                   download
-                   class="download-btn">
-                    Download
-                </a>
-
-            </div>
-
-        </div>
-
-
-        <!-- License & Registrations -->
-        <div class="document-card">
-
-            <div class="document-icon">📜</div>
-
-            <h3>Licenses & Registrations</h3>
-
-            <p>
-                Company Licenses & Registration Documents
-            </p>
-
-            <div class="document-buttons">
-
-                <a href="licenses-registrations.png"
-                   target="_blank"
-                   class="view-btn">
-                    View License
-                </a>
-
-                <a href="licenses-registrations.png"
-                   download
-                   class="download-btn">
-                    Download
-                </a>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<style>
-
-.documents-section {
-    max-width: 900px;
-    margin: 30px auto;
-    padding: 25px;
-    background: #ffffff;
-    border-radius: 12px;
-    box-shadow: 0 4px 18px rgba(0,0,0,0.10);
+    .profile-logo {
+        width: 105px;
+        height: 105px;
+    }
 }
-
-.documents-section h2 {
-    text-align: center;
-    color: #0d6efd;
-    margin-bottom: 25px;
-}
-
-.documents-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 20px;
-}
-
-.document-card {
-    text-align: center;
-    padding: 25px 20px;
-    border: 1px solid #e5e5e5;
-    border-radius: 12px;
-    background: #f8fafc;
-}
-
-.document-icon {
-    font-size: 55px;
-    margin-bottom: 10px;
-}
-
-.document-card h3 {
-    margin: 10px 0;
-    color: #222;
-}
-
-.document-card p {
-    color: #666;
-    margin-bottom: 20px;
-}
-
-.document-buttons {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 10px;
-}
-
-.document-buttons a {
-    display: inline-block;
-    padding: 11px 16px;
-    border-radius: 6px;
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-}
-
-.view-btn {
-    background: #0d6efd;
-}
-
-.download-btn {
-    background: #198754;
-}
-
-.document-buttons a:hover {
-    opacity: 0.85;
-}
-
 </style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+
+    <img
+        src="profile.jpg"
+        alt="HS Bukhari Business Profile"
+        class="profile-logo"
+    >
+
+    <h1>HS BUKHARI ENGINEERING & HVAC SERVICES</h1>
+
+    <p>
+        Professional HVAC & MEP Services
+    </p>
+
+</header>
+
+
+<div class="container">
+
+    <!-- ABOUT BUSINESS -->
+    <section class="card">
+
+        <h2>About Our Business</h2>
+
+        <div class="profile-text">
+
+            <p>
+                <strong>HS Bukhari Engineering & HVAC Services</strong>
+                provides professional Heating, Ventilation and Air Conditioning
+                (HVAC) and Mechanical, Electrical & Plumbing (MEP) services.
+            </p>
+
+            <p>
+                We provide reliable installation, maintenance and technical
+                services for residential, commercial and site projects.
+            </p>
+
+        </div>
+
+    </section>
 
 
     <!-- SERVICES -->
@@ -347,28 +263,6 @@ footer {
     </section>
 
 
-    <!-- LICENSES -->
-    <section class="card">
-
-        <h2>Licenses & Registrations</h2>
-
-        <p style="text-align:center;">
-            Our business licenses, registrations and relevant
-            documents are available for verification.
-        </p>
-
-        <img
-            src="licenses-registrations.png"
-            alt="Licenses and Registrations"
-            class="license-image"
-        >
-
-    </section> 
-    <company profile png>
-        <ejucation png>
-            <experince png>
-
-
     <!-- WHY CHOOSE US -->
     <section class="card">
 
@@ -393,10 +287,9 @@ footer {
 
         <h2>Contact Us</h2>
 
-        <div class="03062739157">
+        <div class="contact">
 
-            📍 Karachi, Pakistan<br>
-
+            📍 Karachi, Pakistan
             <br>
 
             📧 MuhammedHabibshah2022@gmail.com
@@ -404,7 +297,7 @@ footer {
             <div class="buttons">
 
                 <a
-                    href="https://wa.me/"
+                    href="https://wa.me/923062739157"
                     class="btn whatsapp"
                     target="_blank"
                 >
@@ -412,7 +305,7 @@ footer {
                 </a>
 
                 <a
-                    href="tel:+"
+                    href="tel:+923062739157"
                     class="btn call"
                 >
                     Call Us
@@ -438,8 +331,8 @@ footer {
         <h2>Our Site Work</h2>
 
         <img
-            src="Our-site-work.png"
-            alt="Our Site Work"
+            src="Our-Site-work.png"
+            alt="HS Bukhari Site Work"
             class="site-work-image"
         >
 
@@ -448,8 +341,12 @@ footer {
 </div>
 
 
+<!-- FOOTER -->
 <footer>
-    © 2026 M Habib Shah Services | All Rights Reserved
+
+    © 2026 HS Bukhari Engineering & HVAC Services |
+    All Rights Reserved
+
 </footer>
 
 </body>
