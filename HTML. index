@@ -63,7 +63,11 @@ header p {
     margin: 25px 0 15px;
 }
 
-.business-profile img {
+.business-profile img<
+    src="profile.png"
+    alt="HS Bukhari Business Profile"
+    class="profile-logo"
+> {
     width: 150px;
     height: 150px;
     object-fit: cover;
