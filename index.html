@@ -161,45 +161,154 @@ footer {
     }
 
     .services {
-        grid-template-columns: 1fr;
-    }
+        grid-template-columns: 1f
 
-    .card {
-        padding: 18px;
-    }
+    </section><!-- Documents Section -->
+<section class="documents-section">
+
+    <h2>Professional Documents</h2>
+
+    <div class="documents-grid">
+
+        <!-- Experience Letter -->
+        <div class="document-card">
+
+            <div class="document-icon">📄</div>
+
+            <h3>Experience Letter</h3>
+
+            <p>
+                Professional Experience Letter
+            </p>
+
+            <div class="document-buttons">
+
+                <a href="experience-certificate.png"
+                   target="_blank"
+                   class="view-btn">
+                    View Experience Letter
+                </a>
+
+                <a href="experience-certificate.png"
+                   download
+                   class="download-btn">
+                    Download
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- License & Registrations -->
+        <div class="document-card">
+
+            <div class="document-icon">📜</div>
+
+            <h3>Licenses & Registrations</h3>
+
+            <p>
+                Company Licenses & Registration Documents
+            </p>
+
+            <div class="document-buttons">
+
+                <a href="licenses-registrations.png"
+                   target="_blank"
+                   class="view-btn">
+                    View License
+                </a>
+
+                <a href="licenses-registrations.png"
+                   download
+                   class="download-btn">
+                    Download
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<style>
+
+.documents-section {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 25px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.10);
 }
+
+.documents-section h2 {
+    text-align: center;
+    color: #0d6efd;
+    margin-bottom: 25px;
+}
+
+.documents-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.document-card {
+    text-align: center;
+    padding: 25px 20px;
+    border: 1px solid #e5e5e5;
+    border-radius: 12px;
+    background: #f8fafc;
+}
+
+.document-icon {
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+
+.document-card h3 {
+    margin: 10px 0;
+    color: #222;
+}
+
+.document-card p {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.document-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.document-buttons a {
+    display: inline-block;
+    padding: 11px 16px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.view-btn {
+    background: #0d6efd;
+}
+
+.download-btn {
+    background: #198754;
+}
+
+.document-buttons a:hover {
+    opacity: 0.85;
+}
+
 </style>
-</head>
-
-<body>
-
-<header>
-    <h1>M Habib Shah Services</h1>
-    <p>HVAC • Electrical • Plumbing • Panel Installation • Maintenance</p>
-</header>
-
-<div class="container">
-
-    <!-- BUSINESS PROFILE -->
-    <section class="card">
-
-        <h2>Business Profile</h2>
-
-        <img
-            src="company-profile.png"
-            alt="M Habib Shah Services Business Profile"
-            class="profile-image"
-        >
-
-        <p class="profile-text">
-            We provide professional HVAC, electrical, plumbing,
-            panel installation and maintenance services for
-            residential, commercial and industrial projects.
-            Our focus is on quality work, reliable service,
-            proper installation and customer satisfaction.
-        </p>
-
-    </section>
 
 
     <!-- SERVICES -->
