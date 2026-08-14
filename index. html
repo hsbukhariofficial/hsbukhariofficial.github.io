@@ -57,7 +57,7 @@ header p {
 }  
   
 .business-profile img<  
-    src="profile.png"  
+    src="profile.jpg"  
     alt="HS Bukhari Business Profile"  
     class="profile-logo"  
 > {  
