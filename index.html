@@ -9,39 +9,11 @@
 <meta name="description" content="HS Bukhari Engineering & HVAC Services provides professional HVAC, MEP, electrical, plumbing, panel installation and maintenance services in Karachi.">
 
 <style>
-/* All website images */
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-}
 
-/* Business Profile */
-.business-profile-image {
-    width: 130px;
-    height: 130px;
-    object-fit: cover;
-    display: block;
-    margin: 0 auto;
-}
+/* =========================
+   GENERAL
+========================= */
 
-/* Licenses & Certificates */
-.license-image,
-.experience-image {
-    width: 100%;
-    max-width: 900px;
-    height: auto;
-    margin: 15px auto;
-    object-fit: contain;
-    border-radius: 8px;
-}
-
-/* Site Work images */
-.site-work img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-}
 * {
     box-sizing: border-box;
 }
@@ -52,6 +24,16 @@ body {
     background: #f3f7fc;
     color: #333;
 }
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* =========================
+   HEADER
+========================= */
 
 header {
     background: linear-gradient(135deg, #1769e0, #0b4fa8);
@@ -70,18 +52,44 @@ header p {
     font-size: 16px;
 }
 
+/* =========================
+   CONTAINER
+========================= */
+
 .container {
     max-width: 900px;
     margin: 20px auto;
     padding: 0 12px;
 }
-/* CARDS */
+
+/* =========================
+   BUSINESS PROFILE
+========================= */
+
+.business-profile {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.business-profile-image {
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+/* =========================
+   CARDS
+========================= */
 
 .card {
     background: white;
     border-radius: 14px;
     padding: 25px;
-    margin-bottom: 20px;
+    margin: 20px auto;
+    max-width: 900px;
     box-shadow: 0 3px 12px rgba(0,0,0,0.08);
 }
 
@@ -92,7 +100,9 @@ h2 {
     margin-bottom: 20px;
 }
 
-/* ABOUT */
+/* =========================
+   ABOUT
+========================= */
 
 .profile-text {
     text-align: center;
@@ -100,7 +110,9 @@ h2 {
     font-size: 16px;
 }
 
-/* SERVICES */
+/* =========================
+   SERVICES
+========================= */
 
 .services {
     display: grid;
@@ -116,14 +128,20 @@ h2 {
     font-weight: bold;
 }
 
-/* WHY US */
+/* =========================
+   WHY US
+========================= */
 
 .why-us {
     line-height: 2;
     font-size: 16px;
+    text-align: center;
 }
 
-/* INFORMATION */
+/* =========================
+   INFORMATION
+========================= */
+
 .clickable-section {
     cursor: pointer;
 }
@@ -150,27 +168,35 @@ h2 {
     content: " ▲";
 }
 
-.info-box {
+.certificate-box {
     text-align: center;
-    line-height: 1.9;
-    font-size: 16px;
-    margin-top: 20px;
-
-}
-
-.info-box {
-    text-align: center;
-    line-height: 1.9;
-    font-size: 16px;
     margin-top: 20px;
 }
-.info-box {
-    text-align: center;
-    line-height: 1.9;
-    font-size: 16px;
+
+.certificate-image {
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+    margin: 15px auto;
+    object-fit: contain;
+    border-radius: 8px;
 }
 
-/* CONTACT */
+/* =========================
+   QR CODE
+========================= */
+
+.qr-code {
+    width: 180px;
+    height: 180px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+}
+
+/* =========================
+   CONTACT
+========================= */
 
 .contact {
     text-align: center;
@@ -201,31 +227,31 @@ h2 {
 .call {
     background: #16834e;
 }
-.email-section {
-    background: white;
-    padding: 35px 20px;
-    text-align: center;
-    border-radius: 20px;
-    margin: 30px 0;
-}
+
+/* =========================
+   EMAIL
+========================= */
 
 .email-section {
     background: white;
-    padding: 35px 20px;
+    padding: 25px 20px;
     text-align: center;
-    border-radius: 20px;
-    margin: 30px 0;
+    border-radius: 14px;
+    margin: 20px auto;
+    max-width: 900px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.08);
 }
 
 .email-section h2 {
     color: #1769e0;
-    font-size: 40px;
-    margin-bottom: 25px;
+    font-size: 28px;
+    margin-bottom: 18px;
 }
 
 .email-link {
     color: #0000aa;
-    font-size: 24px;
+    font-size: 20px;
+    font-weight: bold;
     text-decoration: underline;
     word-break: break-word;
 }
@@ -233,10 +259,10 @@ h2 {
 .email-link:hover {
     color: #1769e0;
 }
-    background: #1769e0;
-}
 
-/* SITE WORK */
+/* =========================
+   SITE WORK
+========================= */
 
 .site-work-image {
     width: 100%;
@@ -246,7 +272,9 @@ h2 {
     border-radius: 10px;
 }
 
-/* FOOTER */
+/* =========================
+   FOOTER
+========================= */
 
 footer {
     background: #202020;
@@ -257,23 +285,19 @@ footer {
     font-size: 14px;
 }
 
-/* MOBILE */
-@media (max-width: 600px) {
-    .business-profile-image {
-        width: 100%;
-        max-width: 100%;
-        height: auto;
-    }
+/* =========================
+   MOBILE
+========================= */
 
-    .license-image,
-    .experience-image {
-        width: 100%;
-        max-width: 100%;
-        height: auto;
-    }
+@media (max-width: 600px) {
 
     header h1 {
         font-size: 23px;
+    }
+
+    .business-profile-image {
+        width: 130px;
+        height: 130px;
     }
 
     .services {
@@ -287,16 +311,16 @@ footer {
     .service {
         font-size: 14px;
     }
-.qr-code {
-    width: 180px;
-    height: 180px;
-    object-fit: contain;
-    display: block;
-    margin: 0 auto;
-    border-radius: 0;
-    border: none;
-    padding: 0;
+
+    .email-link {
+        font-size: 17px;
+    }
+
+    .email-section h2 {
+        font-size: 26px;
+    }
 }
+
 </style>
 </head>
 
@@ -313,13 +337,18 @@ footer {
 </header>
 
 
+<!-- BUSINESS PROFILE -->
+
 <div class="container">
-     
-  <div class="business-profile">
-    <img src="Company-profile.png"
-         alt="HS Bukhari Engineering & HVAC Services Business Profile"
-         class="business-profile-image">
-</div> 
+
+    <div class="business-profile">
+
+        <img
+            src="Company-profile.png"
+            alt="HS Bukhari Engineering & HVAC Services Business Profile"
+            class="business-profile-image">
+
+    </div>
 
 </div>
 
@@ -396,13 +425,16 @@ footer {
 <!-- LICENSES -->
 
 <details class="card clickable-section">
+
     <summary>📜 Licenses</summary>
 
     <div class="certificate-box">
+
         <img
             src="licenses-registrations.png"
             alt="Licenses and Registration"
             class="certificate-image">
+
     </div>
 
 </details>
@@ -411,13 +443,16 @@ footer {
 <!-- EXPERIENCE -->
 
 <details class="card clickable-section">
+
     <summary>🛠️ Experience</summary>
 
     <div class="certificate-box">
+
         <img
             src="experience-certificate.png"
             alt="Experience Certificate"
             class="certificate-image">
+
     </div>
 
 </details>
@@ -426,30 +461,19 @@ footer {
 <!-- EDUCATION -->
 
 <details class="card clickable-section">
+
     <summary>🎓 Education</summary>
 
     <div class="certificate-box">
+
         <img
             src="education-certificate.png"
             alt="Education Certificate"
             class="certificate-image">
+
     </div>
 
 </details>
-    </div>
-
-</details>
-
-<section class="card">
-
-
-    </div>
-
-</section
-
-    </div>
-
-</section>
 
 
 <!-- QR CODE -->
@@ -458,15 +482,10 @@ footer {
 
     <h2>QR Code</h2>
 
-    <div class="business-profile">
-
-        <img 
-    src="qr-code.png"
-    alt="HS Bukhari Website QR Code"
-    class="qr-code">
-    
-
-    </div>
+    <img
+        src="qr-code.png"
+        alt="HS Bukhari Website QR Code"
+        class="qr-code">
 
 </section>
 
@@ -480,9 +499,6 @@ footer {
     <div class="contact">
 
         📍 Karachi, Pakistan
-        <br>
-
-        
 
         <div class="buttons">
 
@@ -503,28 +519,20 @@ footer {
 
     </div>
 
-    <h2>Email Us</h2>
-
-    <a href="mailto:hs.Bukhari.oficial2025@gmail.com" class="email-link">
-        📧 hs.Bukhari.oficial2025@gmail.com
-    </a>
 </section>
 
 
 <!-- EMAIL -->
 
 <section class="email-section">
+
     <h2>Email Us</h2>
 
-    <a href="mailto:hs.Bukhari.oficial2025@gmail.com" class="email-link">
+    <a
+        href="mailto:hs.Bukhari.oficial2025@gmail.com"
+        class="email-link">
         📧 hs.Bukhari.oficial2025@gmail.com
     </a>
-</section>
- 
-
-        </div>
-
-    </div>
 
 </section>
 
@@ -538,12 +546,9 @@ footer {
     <img
         src="Our-Site-work.png"
         alt="HS Bukhari Site Work"
-        class="site-work-image"
-    >
+        class="site-work-image">
 
 </section>
-
-</div>
 
 
 <!-- FOOTER -->
