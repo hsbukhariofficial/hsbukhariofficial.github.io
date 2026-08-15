@@ -111,7 +111,38 @@ h2 {
 }
 
 /* INFORMATION */
+.clickable-section {
+    cursor: pointer;
+}
 
+.clickable-section summary {
+    color: #1769e0;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    list-style: none;
+    padding: 5px;
+}
+
+.clickable-section summary::-webkit-details-marker {
+    display: none;
+}
+
+.clickable-section summary::after {
+    content: " ▼";
+    font-size: 14px;
+}
+
+.clickable-section[open] summary::after {
+    content: " ▲";
+}
+
+.info-box {
+    text-align: center;
+    line-height: 1.9;
+    font-size: 16px;
+    margin-top: 20px;
+}
 .info-box {
     text-align: center;
     line-height: 1.9;
@@ -310,6 +341,46 @@ footer {
 
 <!-- LICENSE -->
 
+<details class="card clickable-section">
+    <summary>📜 License</summary>
+
+    <div class="info-box">
+        ✔️ Professional HVAC & MEP Services<br>
+        ✔️ Electrical & Mechanical Work<br>
+        ✔️ Technical Installation & Maintenance
+    </div>
+
+</details>
+
+
+<!-- EXPERIENCE -->
+
+<details class="card clickable-section">
+    <summary>🛠️ Experience</summary>
+
+    <div class="info-box">
+        ✔️ HVAC Installation & Maintenance<br>
+        ✔️ MEP Services<br>
+        ✔️ Electrical Work<br>
+        ✔️ Commercial & Site Projects<br>
+        ✔️ Equipment Maintenance
+    </div>
+
+</details>
+
+
+<!-- EDUCATION -->
+
+<details class="card clickable-section">
+    <summary>🎓 Education</summary>
+
+    <div class="info-box">
+        🎓 Technical Education<br>
+        🎓 Electrical / HVAC & MEP Technical Training
+    </div>
+
+</details>
+
 <section class="card">
 
     <h2>License</h2>
@@ -322,38 +393,7 @@ footer {
 
     </div>
 
-</section>
-
-
-<!-- EXPERIENCE -->
-
-<section class="card">
-
-    <h2>Experience</h2>
-
-    <div class="info-box">
-
-        ✔️ HVAC Installation & Maintenance<br>
-        ✔️ MEP Services<br>
-        ✔️ Electrical Work<br>
-        ✔️ Commercial & Site Projects<br>
-        ✔️ Equipment Maintenance
-
-    </div>
-
-</section>
-
-
-<!-- EDUCATION -->
-
-<section class="card">
-
-    <h2>Education</h2>
-
-    <div class="info-box">
-
-        🎓 Technical Education<br>
-        🎓 Electrical / HVAC & MEP Technical Training
+</section
 
     </div>
 
