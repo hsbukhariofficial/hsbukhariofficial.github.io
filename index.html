@@ -19,6 +19,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -28,9 +32,9 @@ body {
 
 img {
     max-width: 100%;
-    height: auto;
     display: block;
 }
+
 
 /* =========================
    HEADER
@@ -53,6 +57,7 @@ header p {
     font-size: 16px;
 }
 
+
 /* =========================
    CONTAINER
 ========================= */
@@ -63,28 +68,31 @@ header p {
     padding: 0 12px;
 }
 
+
 /* =========================
    BUSINESS PROFILE
 ========================= */
 
 .business-profile {
-    width: 100%;
     text-align: center;
+    margin: 20px 0;
 }
 
 .business-profile-image {
-    width: 180px;
-    height: 210px;
-    object-fit: cover;
-    border-radius: 0;
-    display: block;
+    width: 130px;
+    height: 150px;
+    object-fit: contain;
+    background: white;
+    padding: 5px;
+    border-radius: 10px;
+    border: 3px solid #1769e0;
     margin: 0 auto;
     cursor: pointer;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.12);
 }
 
 .profile-view-btn {
     display: block;
-    width: fit-content;
     margin: 12px auto 0;
     padding: 10px 20px;
     background: #1769e0;
@@ -94,6 +102,7 @@ header p {
     font-weight: bold;
     cursor: pointer;
 }
+
 
 /* =========================
    FULL SCREEN PROFILE
@@ -107,18 +116,20 @@ header p {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.9);
+    background: rgba(0,0,0,0.9);
     align-items: center;
     justify-content: center;
-    padding: 10px;
+    padding: 20px;
 }
 
 .profile-image-viewer img {
-    width: 100%;
+    max-width: 95%;
+    max-height: 90%;
+    width: auto;
     height: auto;
-    max-height: 100%;
     object-fit: contain;
 }
+
 
 /* =========================
    CARDS
@@ -140,6 +151,7 @@ h2 {
     margin-bottom: 20px;
 }
 
+
 /* =========================
    ABOUT
 ========================= */
@@ -149,6 +161,7 @@ h2 {
     line-height: 1.8;
     font-size: 16px;
 }
+
 
 /* =========================
    SERVICES
@@ -168,6 +181,7 @@ h2 {
     font-weight: bold;
 }
 
+
 /* =========================
    WHY US
 ========================= */
@@ -177,6 +191,7 @@ h2 {
     font-size: 16px;
     text-align: center;
 }
+
 
 /* =========================
    INFORMATION
@@ -215,24 +230,25 @@ h2 {
 
 .certificate-image {
     width: 100%;
-    max-width: 900px;
+    max-width: 850px;
     height: auto;
     margin: 15px auto;
     object-fit: contain;
     border-radius: 8px;
 }
 
+
 /* =========================
    QR CODE
 ========================= */
 
 .qr-code {
-    width: 180px;
-    height: 180px;
+    width: 160px;
+    height: 160px;
     object-fit: contain;
-    display: block;
     margin: 0 auto;
 }
+
 
 /* =========================
    CONTACT
@@ -279,33 +295,21 @@ h2 {
 
 .location-heading {
     text-align: center;
-    margin: 18px 0 5px;
+    margin: 20px 0 0;
     font-size: 20px;
-    font-weight: bold;
     color: #1769e0;
 }
-/* =========================
-   WORK IMAGE SLIDER
-========================= */
-.work-slide {
-    width: 100%;
-    height: 400px;
-    object-fit: cover;
-    border-radius: 10px;
-    display: none;
-}
 
-.work-slide.active {
-    display: block;
-}
+
+/* =========================
+   SITE WORK SLIDER
+========================= */
+
 .work-slider {
     position: relative;
     width: 100%;
     max-width: 800px;
     margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .work-images {
@@ -331,48 +335,36 @@ h2 {
     z-index: 5;
     top: 50%;
     transform: translateY(-50%);
-    width: 42px;
-    height: 42px;
+    width: 48px;
+    height: 48px;
     border: none;
     border-radius: 50%;
-    background: rgba(23, 105, 224, 0.9);
+    background: rgba(23,105,224,0.95);
     color: white;
-    font-size: 25px;
+    font-size: 30px;
     font-weight: bold;
     cursor: pointer;
 }
 
 .slider-btn.left {
-    left: 10px;
+    left: 12px;
 }
 
 .slider-btn.right {
-    right: 10px;
+    right: 12px;
 }
 
-@media (max-width: 600px) {
-
-    .work-slide {
-        height: 280px;
-    }
-
-    .slider-btn {
-        width: 38px;
-        height: 38px;
-        font-size: 21px;
-    }
 
 /* =========================
-   SITE WORK
+   PDF GUIDE
 ========================= */
 
-.site-work-image {
-    width: 100%;
-    max-width: 800px;
-    display: block;
-    margin: 0 auto;
-    border-radius: 10px;
+.pdf-text {
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.6;
 }
+
 
 /* =========================
    FOOTER
@@ -387,6 +379,7 @@ footer {
     font-size: 14px;
 }
 
+
 /* =========================
    MOBILE
 ========================= */
@@ -397,9 +390,13 @@ footer {
         font-size: 23px;
     }
 
+    header p {
+        font-size: 15px;
+    }
+
     .business-profile-image {
-        width: 180px;
-        height: 210px;
+        width: 120px;
+        height: 140px;
     }
 
     .services {
@@ -422,6 +419,21 @@ footer {
         padding: 11px 16px;
     }
 
+    .work-slide {
+        height: 280px;
+    }
+
+    .slider-btn {
+        width: 42px;
+        height: 42px;
+        font-size: 25px;
+    }
+
+    .qr-code {
+        width: 150px;
+        height: 150px;
+    }
+
 }
 
 </style>
@@ -430,25 +442,34 @@ footer {
 
 <body>
 
-<!-- HEADER -->
+
+<!-- =========================
+     HEADER
+========================= -->
 
 <header>
 
-    <h1>HS BUKHARI ENGINEERING & HVAC SERVICES</h1>
+    <h1>
+        HS BUKHARI ENGINEERING & HVAC SERVICES
+    </h1>
 
-    <p>Professional HVAC & MEP Services</p>
+    <p>
+        Professional HVAC & MEP Services
+    </p>
 
 </header>
 
 
-<!-- BUSINESS PROFILE -->
+<!-- =========================
+     BUSINESS PROFILE
+========================= -->
 
 <div class="container">
 
     <div class="business-profile">
 
         <img
-            src="./company-profile.png?v=5"
+            src="company-profile.png?v=5"
             alt="HS Bukhari Engineering & HVAC Services Business Profile"
             class="business-profile-image"
             onclick="openProfileImage()">
@@ -457,7 +478,9 @@ footer {
             type="button"
             class="profile-view-btn"
             onclick="openProfileImage()">
+
             👁️ View Profile
+
         </button>
 
     </div>
@@ -465,7 +488,9 @@ footer {
 </div>
 
 
-<!-- FULL SCREEN PROFILE IMAGE -->
+<!-- =========================
+     FULL SCREEN PROFILE
+========================= -->
 
 <div
     id="profileImageViewer"
@@ -473,29 +498,40 @@ footer {
     onclick="closeProfileImage()">
 
     <img
-        src="./company-profile.png?v=5"
+        src="company-profile.png?v=5"
         alt="HS Bukhari Engineering & HVAC Services">
 
 </div>
 
 
-<!-- ABOUT -->
+<!-- =========================
+     ABOUT
+========================= -->
 
 <section class="card">
 
-    <h2>About Our Business</h2>
+    <h2>
+        About Our Business
+    </h2>
 
     <div class="profile-text">
 
         <p>
-            <strong>HS Bukhari Engineering & HVAC Services</strong>
+
+            <strong>
+                HS Bukhari Engineering & HVAC Services
+            </strong>
+
             provides professional Heating, Ventilation and Air Conditioning
             (HVAC) and Mechanical, Electrical & Plumbing (MEP) services.
+
         </p>
 
         <p>
+
             We provide reliable installation, maintenance and technical
             services for residential, commercial and site projects.
+
         </p>
 
     </div>
@@ -503,44 +539,74 @@ footer {
 </section>
 
 
-<!-- SERVICES -->
+<!-- =========================
+     SERVICES
+========================= -->
 
 <section class="card">
 
-    <h2>Our Services</h2>
+    <h2>
+        Our Services
+    </h2>
 
     <div class="services">
 
-        <div class="service">❄️ HVAC Installation</div>
+        <div class="service">
+            ❄️ HVAC Installation
+        </div>
 
-        <div class="service">⚡ Electrical Work</div>
+        <div class="service">
+            ⚡ Electrical Work
+        </div>
 
-        <div class="service">🔧 Plumbing Services</div>
+        <div class="service">
+            🔧 Plumbing Services
+        </div>
 
-        <div class="service">🔌 Panel Installation</div>
+        <div class="service">
+            🔌 Panel Installation
+        </div>
 
-        <div class="service">🛠️ Maintenance Services</div>
+        <div class="service">
+            🛠️ Maintenance Services
+        </div>
 
-        <div class="service">🏢 Commercial & Site Work</div>
+        <div class="service">
+            🏢 Commercial & Site Work
+        </div>
 
     </div>
 
 </section>
 
 
-<!-- WHY CHOOSE US -->
+<!-- =========================
+     WHY CHOOSE US
+========================= -->
 
 <section class="card">
 
-    <h2>Why Choose Us?</h2>
+    <h2>
+        Why Choose Us?
+    </h2>
 
     <div class="why-us">
 
-        ✔️ Quality Work<br>
-        ✔️ Professional Service<br>
-        ✔️ Reliable Maintenance<br>
-        ✔️ Residential & Commercial Projects<br>
-        ✔️ Customer Satisfaction<br>
+        ✔️ Quality Work
+        <br>
+
+        ✔️ Professional Service
+        <br>
+
+        ✔️ Reliable Maintenance
+        <br>
+
+        ✔️ Residential & Commercial Projects
+        <br>
+
+        ✔️ Customer Satisfaction
+        <br>
+
         ✔️ Safe and Proper Installation
 
     </div>
@@ -548,11 +614,15 @@ footer {
 </section>
 
 
-<!-- LICENSES -->
+<!-- =========================
+     LICENSES
+========================= -->
 
 <details class="card clickable-section">
 
-    <summary>📜 Licenses</summary>
+    <summary>
+        📜 Licenses
+    </summary>
 
     <div class="certificate-box">
 
@@ -566,11 +636,15 @@ footer {
 </details>
 
 
-<!-- EXPERIENCE -->
+<!-- =========================
+     EXPERIENCE
+========================= -->
 
 <details class="card clickable-section">
 
-    <summary>🛠️ Experience</summary>
+    <summary>
+        🛠️ Experience
+    </summary>
 
     <div class="certificate-box">
 
@@ -584,11 +658,15 @@ footer {
 </details>
 
 
-<!-- EDUCATION -->
+<!-- =========================
+     EDUCATION
+========================= -->
 
 <details class="card clickable-section">
 
-    <summary>🎓 Education</summary>
+    <summary>
+        🎓 Education
+    </summary>
 
     <div class="certificate-box">
 
@@ -602,11 +680,15 @@ footer {
 </details>
 
 
-<!-- QR CODE -->
+<!-- =========================
+     QR CODE
+========================= -->
 
 <section class="card">
 
-    <h2>QR Code</h2>
+    <h2>
+        QR Code
+    </h2>
 
     <img
         src="qr-code.png"
@@ -616,88 +698,232 @@ footer {
 </section>
 
 
-<!-- CONTACT -->
+<!-- =========================
+     CONTACT
+========================= -->
 
 <section class="contact-section" id="contact">
 
-    <h2>Contact Us</h2>
+    <h2>
+        Contact Us
+    </h2>
 
     <div class="buttons">
 
         <a
             href="https://wa.me/923062739157"
-            class="btn whatsapp">
+            class="btn whatsapp"
+            target="_blank"
+            rel="noopener">
+
             WhatsApp
+
         </a>
 
         <a
             href="tel:+923062739157"
             class="btn call">
+
             Call Us
+
         </a>
 
         <a
-            href="mailto:hs.bukhari.oficial2025@gmail.com"
+            href="mailto:hs.Bukhari.oficial2025@gmail.com"
             class="btn email">
+
             Email Us
+
         </a>
 
     </div>
 
     <h3 class="location-heading">
-        📍 Karachi Pakistan 🇵🇰
+
+        📍 Karachi, Pakistan 🇵🇰
+
     </h3>
 
 </section>
-<!-- SITE WORK -->
+
+
+<!-- =========================
+     OUR SITE WORK
+     ONLY ONE SECTION
+========================= -->
 
 <section class="card">
 
-    <h2>Our Site Work</h2>
+    <h2>
+        Our Site Work
+    </h2>
 
     <div class="work-slider">
 
-        <button class="slider-btn left" onclick="moveSlide(-1)">
+        <button
+            type="button"
+            class="slider-btn left"
+            onclick="moveSlide(-1)">
+
             ❮
+
         </button>
+
 
         <div class="work-images">
 
-            <img src="site-work-1.png"
-                 alt="Electrical Panel Wiring Work"
-                 class="work-slide">
+            <img
+                src="site-work-1.png"
+                alt="Chiller Installation and Maintenance Work"
+                class="work-slide">
 
-            <img src="site-work-2.png"
-                 alt="AHU Service Work"
-                 class="work-slide">
+            <img
+                src="site-work-2.png"
+                alt="Pump and Motor Installation"
+                class="work-slide">
 
-            <img src="site-work-3.png"
-                 alt="Pump and Motor Installation"
-                 class="work-slide">
+            <img
+                src="site-work-3.png"
+                alt="Pump, Motor and CHW Piping Work"
+                class="work-slide">
 
-            <img src="site-work-4.png"
-                 alt="Chiller Maintenance Work"
-                 class="work-slide">
+            <img
+                src="site-work-4.png"
+                alt="AHU Service Work"
+                class="work-slide">
 
-            <img src="site-work-5.png"
-                 alt="HVAC MEP Site Work"
-                 class="work-slide">
+            <img
+                src="site-work-5.png"
+                alt="HVAC MEP Site Work"
+                class="work-slide">
+
+            <img
+                src="site-work-6.png"
+                alt="MTA Chiller Installation and Maintenance Work"
+                class="work-slide">
+
+            <img
+                src="site-work-7.png"
+                alt="HVAC Site Work"
+                class="work-slide">
+
+            <img
+                src="site-work-8.png"
+                alt="Electrical and HVAC Site Work"
+                class="work-slide">
+
+            <img
+                src="site-work-9.png"
+                alt="Mechanical Site Work"
+                class="work-slide">
+
+            <img
+                src="site-work-10.png"
+                alt="HS Bukhari Site Work"
+                class="work-slide">
+
+            <img
+                src="ahu service work.png"
+                alt="AHU Service Work"
+                class="work-slide">
 
         </div>
 
-        <button class="slider-btn right" onclick="moveSlide(1)">
+
+        <button
+            type="button"
+            class="slider-btn right"
+            onclick="moveSlide(1)">
+
             ❯
+
         </button>
 
     </div>
 
-</section><script>
+</section>
+
+
+<!-- =========================
+     HVAC & MEP PDF GUIDE
+========================= -->
+
+<section class="card">
+
+    <h2>
+        HVAC & MEP Installation Guide
+    </h2>
+
+    <p class="pdf-text">
+
+        Chillers, AHUs, Electrical Panels & Heat Exchangers
+
+    </p>
+
+    <div style="text-align:center; margin-top:20px;">
+
+        <a
+            href="HS_Bukhari_HVAC_MEP_Installation_Work.pdf"
+            target="_blank"
+            class="btn email">
+
+            📄 View HVAC & MEP PDF
+
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer>
+
+    © 2025 HS Bukhari Engineering & HVAC Services
+
+    <br>
+
+    All Rights Reserved
+
+</footer>
+
+
+<!-- =========================
+     JAVASCRIPT
+========================= -->
+
+<script>
+
+/* PROFILE IMAGE */
+
+function openProfileImage() {
+
+    document.getElementById("profileImageViewer").style.display = "flex";
+
+}
+
+function closeProfileImage() {
+
+    document.getElementById("profileImageViewer").style.display = "none";
+
+}
+
+
+/* SITE WORK SLIDER */
 
 let currentSlide = 0;
 
 const slides = document.querySelectorAll(".work-slide");
 
+
 function showSlide(index) {
+
+    if (slides.length === 0) {
+        return;
+    }
 
     if (index >= slides.length) {
         currentSlide = 0;
@@ -707,119 +933,43 @@ function showSlide(index) {
         currentSlide = slides.length - 1;
     }
 
-    slides.forEach(slide => {
+    slides.forEach(function(slide) {
+
         slide.classList.remove("active");
+
     });
 
     slides[currentSlide].classList.add("active");
+
 }
+
 
 function moveSlide(direction) {
+
     currentSlide += direction;
+
     showSlide(currentSlide);
+
 }
 
-/* First picture */
+
+/* FIRST IMAGE */
+
 showSlide(currentSlide);
 
-/* Auto Slide Every 3 Seconds */
+
+/* AUTO SLIDE EVERY 4 SECONDS */
+
 setInterval(function() {
+
     currentSlide++;
+
     showSlide(currentSlide);
-}, 3000);
+
+}, 4000);
 
 </script>
 
-<!-- SITE WORK -->
 
-    <h2>Our Site Work</h2>
-
-    <div class="work-slider">
-
-        <button class="slider-btn left" onclick="moveSlide(-1)">
-            ❮
-        </button>
-
-        <div class="work-images">
-
-            <img src="site-work-1.png"
-                 alt="Chiller Installation and Maintenance Work"
-                 class="work-slide">
-
-            <img src="site-work-2.png"
-                 alt="Pump and Motor Installation"
-                 class="work-slide">
-
-            <img src="site-work-3.png"
-                 alt="Pump, Motor and CHW Piping Work"
-                 class="work-slide">
-
-            <img src="site-work-4.png"
-                 alt="AHU Service Work"
-                 class="work-slide">
-
-            <img src="site-work-5.png"
-                 alt="HVAC MEP Site Work"
-                 class="work-slide">
-
-            <img src="site-work-6.png"
-                 alt="MTA Chiller Installation and Maintenance Work"
-                 class="work-slide">
-
-        </div>
-
-        <button class="slider-btn right" onclick="moveSlide(1)">
-            ❯
-        </button>
-
-    </div>
-
-</section>
-
-<section class="card">
-
-    <h2>Our Site Work</h2>
-
-    <img
-        src="Oursite-work-1.png
-site-work-2.png
-site-work-3.png
-site-work-4.png
-site-work-5.png
-site-work-6.png
-site-work-7.png
-site-work-8.png
-site-work-9.png
-site-work-10.png "
-        alt="HS Bukhari Site Work"
-        class="site-work-image">
-
-</section> class="card">
-
-    <h2>HVAC & MEP Installation Guide</h2>
-
-    <p style="text-align:center;">
-        Chillers, AHUs, Electrical Panels & Heat Exchangers
-    </p>
-
-    <div style="text-align:center; margin-top:15px;">
-
-        <a
-            href="HS_Bukhari_HVAC_MEP_Installation_Work.pdf"
-            target="_blank"
-            class="btn email">
-            📄 View HVAC & MEP PDF
-        </a>
-
-    </div>
-
-</section>
-
-
-<!-- FOOTER -->
-
-<footer>
-
-    © 2025 HS Bukhari Engineering & HHVAC service's
 </body>
 </html>
