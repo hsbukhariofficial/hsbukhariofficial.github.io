@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -65,7 +66,39 @@ header p {
 /* =========================
    BUSINESS PROFILE
 ========================= */
+
+.business-profile {
+    width: 100%;
+    text-align: center;
 }
+
+.business-profile-image {
+    width: 180px;
+    height: 210px;
+    object-fit: cover;
+    border-radius: 0;
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.profile-view-btn {
+    display: block;
+    width: fit-content;
+    margin: 12px auto 0;
+    padding: 10px 20px;
+    background: #1769e0;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* =========================
+   FULL SCREEN PROFILE
+========================= */
+
 .profile-image-viewer {
     display: none;
     position: fixed;
@@ -79,30 +112,14 @@ header p {
     justify-content: center;
     padding: 10px;
 }
-.profile-view-btn {
-    display: block;
-    margin: 12px auto 0;
-    padding: 10px 20px;
-    background: #1769e0;
-    color: white;
-    border: none;
-    border-radius: 7px;
-    font-weight: bold;
-    cursor: pointer;
+
+.profile-image-viewer img {
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+    object-fit: contain;
 }
-.profile-view-btn {
-    display: block;
-    width: fit-content;
-    margin: 12px auto 0;
-    padding: 10px 20px;
-    background: #1769e0;
-    color: white;
-    text-decoration: none;
-    border-radius: 7px;
-    font-weight: bold;
-    text-align: center;
-}
- 
+
 /* =========================
    CARDS
 ========================= */
@@ -221,9 +238,14 @@ h2 {
    CONTACT
 ========================= */
 
-.contact {
+.contact-section {
+    background: white;
+    border-radius: 14px;
+    padding: 25px;
+    margin: 20px auto;
+    max-width: 900px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.08);
     text-align: center;
-    line-height: 2;
 }
 
 .buttons {
@@ -254,6 +276,7 @@ h2 {
 .email {
     background: #1769e0;
 }
+
 .location-heading {
     text-align: center;
     margin: 18px 0 5px;
@@ -261,6 +284,7 @@ h2 {
     font-weight: bold;
     color: #1769e0;
 }
+
 /* =========================
    SITE WORK
 ========================= */
@@ -297,8 +321,8 @@ footer {
     }
 
     .business-profile-image {
-        width: 130px;
-        height: 130px;
+        width: 180px;
+        height: 210px;
     }
 
     .services {
@@ -313,35 +337,20 @@ footer {
         font-size: 14px;
     }
 
-    .email-link {
-        font-size: 17px;
+    .buttons {
+        gap: 8px;
     }
 
-    .email-section h2 {
-        font-size: 26px;
+    .btn {
+        padding: 11px 16px;
     }
+
 }
 
 </style>
 
 </head>
-<div class="business-profile">
 
-    <img
-        src="./company-profile.png?v=4"
-        alt="HS Bukhari Engineering & HVAC Services Business Profile"
-        class="business-profile-image"
-        onclick="openProfileImage()">
-
-    <button type="button"
-            class="profile-view-btn"
-            onclick="openProfileImage()">
-        👁️ View Profile
-    </button>
-}
-
-<script>
-}
 <body>
 
 <!-- HEADER -->
@@ -362,19 +371,33 @@ footer {
     <div class="business-profile">
 
         <img
-            src="./company-profile.png?v=4"
+            src="./Company-profile.png?v=5"
             alt="HS Bukhari Engineering & HVAC Services Business Profile"
             class="business-profile-image"
-  <a href="#" class="profile-view-btn" onclick="openProfileImage(); return false;">
-    👁️ View Profile
-</a>          onclick="openProfileImage()">
+            onclick="openProfileImage()">
+
+        <button
+            type="button"
+            class="profile-view-btn"
+            onclick="openProfileImage()">
+            👁️ View Profile
+        </button>
 
     </div>
 
 </div>
-    </div>
 
-</div>
+
+<!-- FULL SCREEN PROFILE IMAGE -->
+
+<div
+    id="profileImageViewer"
+    class="profile-image-viewer"
+    onclick="closeProfileImage()">
+
+    <img
+        src="./Company-profile.png?v=5"
+        alt="HS Bukhari Engineering & HVAC Services">
 
 </div>
 
@@ -524,32 +547,29 @@ footer {
 
     <div class="buttons">
 
-        <a href="https://wa.me/923062739157" class="btn whatsapp">
+        <a
+            href="https://wa.me/923062739157"
+            class="btn whatsapp">
             WhatsApp
         </a>
 
-        <a href="tel:+923062739157" class="btn call">
+        <a
+            href="tel:+923062739157"
+            class="btn call">
             Call Us
         </a>
 
-        <a href="mailto:hs.bukhari.oficial2025@gmail.com" class="btn email">
+        <a
+            href="mailto:hs.bukhari.oficial2025@gmail.com"
+            class="btn email">
             Email Us
         </a>
 
     </div>
 
-    <h3 class="location-heading">📍 Karachi Pakistan 🇵🇰</h3>
-
-
-
-</section> 
-
-</div>
-
-        </div>
-
-    </div>
-
+    <h3 class="location-heading">
+        📍 Karachi Pakistan 🇵🇰
+    </h3>
 
 </section>
 
@@ -577,6 +597,19 @@ footer {
     All Rights Reserved
 
 </footer>
+
+
+<script>
+
+function openProfileImage() {
+    document.getElementById("profileImageViewer").style.display = "flex";
+}
+
+function closeProfileImage() {
+    document.getElementById("profileImageViewer").style.display = "none";
+}
+
+</script>
 
 </body>
 </html>
