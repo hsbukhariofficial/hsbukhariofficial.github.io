@@ -287,7 +287,17 @@ h2 {
 /* =========================
    WORK IMAGE SLIDER
 ========================= */
+.work-slide {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    display: none;
+}
 
+.work-slide.active {
+    display: block;
+}
 .work-slider {
     position: relative;
     width: 100%;
@@ -681,16 +691,106 @@ footer {
 
     </div>
 
-</section>
+</section><script>
+
+let currentSlide = 0;
+
+const slides = document.querySelectorAll(".work-slide");
+
+function showSlide(index) {
+
+    if (index >= slides.length) {
+        currentSlide = 0;
+    }
+
+    if (index < 0) {
+        currentSlide = slides.length - 1;
+    }
+
+    slides.forEach(slide => {
+        slide.classList.remove("active");
+    });
+
+    slides[currentSlide].classList.add("active");
+}
+
+function moveSlide(direction) {
+    currentSlide += direction;
+    showSlide(currentSlide);
+}
+
+/* First picture */
+showSlide(currentSlide);
+
+/* Auto Slide Every 3 Seconds */
+setInterval(function() {
+    currentSlide++;
+    showSlide(currentSlide);
+}, 3000);
+
+</script>
 
 <!-- SITE WORK -->
+
+    <h2>Our Site Work</h2>
+
+    <div class="work-slider">
+
+        <button class="slider-btn left" onclick="moveSlide(-1)">
+            ❮
+        </button>
+
+        <div class="work-images">
+
+            <img src="site-work-1.png"
+                 alt="Chiller Installation and Maintenance Work"
+                 class="work-slide">
+
+            <img src="site-work-2.png"
+                 alt="Pump and Motor Installation"
+                 class="work-slide">
+
+            <img src="site-work-3.png"
+                 alt="Pump, Motor and CHW Piping Work"
+                 class="work-slide">
+
+            <img src="site-work-4.png"
+                 alt="AHU Service Work"
+                 class="work-slide">
+
+            <img src="site-work-5.png"
+                 alt="HVAC MEP Site Work"
+                 class="work-slide">
+
+            <img src="site-work-6.png"
+                 alt="MTA Chiller Installation and Maintenance Work"
+                 class="work-slide">
+
+        </div>
+
+        <button class="slider-btn right" onclick="moveSlide(1)">
+            ❯
+        </button>
+
+    </div>
+
+</section>
 
 <section class="card">
 
     <h2>Our Site Work</h2>
 
     <img
-        src="Our-Site-work.png"
+        src="Oursite-work-1.png
+site-work-2.png
+site-work-3.png
+site-work-4.png
+site-work-5.png
+site-work-6.png
+site-work-7.png
+site-work-8.png
+site-work-9.png
+site-work-10.png "
         alt="HS Bukhari Site Work"
         class="site-work-image">
 
