@@ -79,7 +79,22 @@ header p {
     justify-content: center;
     padding: 10px;
 }
+.profile-view-btn {
+    display: block;
+    width: fit-content;
+    margin: 12px auto 0;
+    padding: 10px 20px;
+    background: #1769e0;
+    color: white;
+    text-decoration: none;
+    border-radius: 7px;
+    font-weight: bold;
+    text-align: center;
+}
 
+.profile-view-btn:hover {
+    background: #0d52b5;
+}
 .profile-image-viewer img {
     width: 100%;
     height: auto;
@@ -238,7 +253,13 @@ h2 {
 .email {
     background: #1769e0;
 }
-
+.location-heading {
+    text-align: center;
+    margin: 18px 0 5px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #1769e0;
+}
 /* =========================
    SITE WORK
 ========================= */
@@ -341,7 +362,9 @@ function closeProfileImage() {
             src="./company-profile.png?v=4"
             alt="HS Bukhari Engineering & HVAC Services Business Profile"
             class="business-profile-image"
-            onclick="openProfileImage()">
+  <a href="#" class="profile-view-btn" onclick="openProfileImage(); return false;">
+    👁️ View Profile
+</a>          onclick="openProfileImage()">
 
     </div>
 
@@ -512,7 +535,11 @@ function closeProfileImage() {
 
     </div>
 
-</section>  📍Karachi Pakistan🇵🇰
+    <h3 class="location-heading">📍 Karachi Pakistan 🇵🇰</h3>
+
+
+
+</section> 
 
 </div>
 
