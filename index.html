@@ -877,18 +877,195 @@ footer {
 
 
 <!-- =========================
+     SITE WORK SLIDER
+========================= -->
+
+<section class="card">
+
+    <h2>Our Site Work</h2>
+
+    <div class="work-slider">
+
+        <button
+            type="button"
+            class="slider-btn left"
+            onclick="moveSlide(-1)">
+            ❮
+        </button>
+
+        <div class="work-images">
+
+            <img
+                src="site-work-1.png"
+                alt="Electrical Panel Wiring Work"
+                class="work-slide">
+
+            <img
+                src="site-work-2.png"
+                alt="Ahu Service Work"
+                class="work-slide">
+
+            <img
+                src="site-work-3.png"
+                alt="Pump and Motor Installation"
+                class="work-slide">
+
+            <img
+                src="site-work-4.png"
+                alt="Chiller Maintenance Work"
+                class="work-slide">
+
+            <img
+                src="site-work-5.png"
+                alt="HVAC MEP Site Work"
+                class="work-slide">
+
+            <img
+                src="site-work-6.png"
+                alt="MTA Chiller Installation and Maintenance Work"
+                class="work-slide">
+
+            <img
+                src="site-work-7.png"
+                alt="HVAC Site Work"
+                class="work-slide">
+
+            <img
+                src="site-work-8.png"
+                alt="MEP Installation Work"
+                class="work-slide">
+
+            <img
+                src="site-work-9.png"
+                alt="HVAC Maintenance Work"
+                class="work-slide">
+
+            <img
+                src="site-work-10.png"
+                alt="HVAC Engineering Site Work"
+                class="work-slide">
+
+            <!-- AHU SERVICE WORK -->
+
+            <img
+                src=" Ahu-service-work.png"
+                alt="AHU Service Work"
+                class="work-slide">
+
+        </div>
+
+        <button
+            type="button"
+            class="slider-btn right"
+            onclick="moveSlide(1)">
+            ❯
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     SLIDER SCRIPT
+========================= -->
+
+<script>
+
+let currentSlide = 0;
+
+const slides = document.querySelectorAll(".work-slide");
+
+function showSlide(index) {
+
+    if (slides.length === 0) {
+        return;
+    }
+
+    if (index >= slides.length) {
+        currentSlide = 0;
+    }
+
+    if (index < 0) {
+        currentSlide = slides.length - 1;
+    }
+
+    slides.forEach(function(slide) {
+        slide.classList.remove("active");
+    });
+
+    slides[currentSlide].classList.add("active");
+}
+
+
+function moveSlide(direction) {
+
+    currentSlide += direction;
+
+    showSlide(currentSlide);
+}
+
+
+/* First image */
+
+showSlide(currentSlide);
+
+
+/* Auto slide every 3 seconds */
+
+setInterval(function() {
+
+    currentSlide++;
+
+    showSlide(currentSlide);
+
+}, 3000);
+
+</script>
+
+
+<!-- =========================
+     HVAC PDF
+========================= -->
+
+<section class="card">
+
+    <h2>HVAC & MEP Installation Guide</h2>
+
+    <p style="text-align:center;">
+        Chillers, AHUs, Electrical Panels & Heat Exchangers
+    </p>
+
+    <div style="text-align:center; margin-top:15px;">
+
+        <a
+            href="HS_Bukhari_HVAC_MEP_Installation_Work.pdf"
+            target="_blank"
+            class="btn email">
+
+            📄 View HVAC & MEP PDF
+
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
      FOOTER
 ========================= -->
 
 <footer>
 
     © 2025 HS Bukhari Engineering & HVAC Services
-
     <br>
-
     All Rights Reserved
 
 </footer>
+
+</body>
+</html>
 
 
 <!-- =========================
