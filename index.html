@@ -720,54 +720,6 @@ footer {
 
 <footer>
 
-    © 2025 HS Bukhari Engineering & HVAC Services
-    <br>
-    All Rights Reserved
-
-</footer>
-
-
-<script>
-
-function openProfileImage() {
-    document.getElementById("profileImageViewer").style.display = "flex";
-}
-
-function closeProfileImage() {
-    document.getElementById("profileImageViewer").style.display = "none";
-}
-
-</script>
-
-
-let currentSlide = 0;
-
-const slides = document.querySelectorAll(".work-slide");
-
-function showSlide(index) {
-
-    if (index >= slides.length) {
-        currentSlide = 0;
-    }
-
-    if (index < 0) {
-        currentSlide = slides.length - 1;
-    }
-
-    slides.forEach(slide => {
-        slide.classList.remove("active");
-    });
-
-    slides[currentSlide].classList.add("active");
-}
-
-function moveSlide(direction) {
-    currentSlide += direction;
-    showSlide(currentSlide);
-}
-
-showSlide(currentSlide);
-
-</script>
+    © 2025 HS Bukhari Engineering & HHVAC service's
 </body>
 </html>
