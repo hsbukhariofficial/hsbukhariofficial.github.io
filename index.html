@@ -284,6 +284,73 @@ h2 {
     font-weight: bold;
     color: #1769e0;
 }
+/* =========================
+   WORK IMAGE SLIDER
+========================= */
+
+.work-slider {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.work-images {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.work-slide {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    display: none;
+    border-radius: 10px;
+}
+
+.work-slide.active {
+    display: block;
+}
+
+.slider-btn {
+    position: absolute;
+    z-index: 5;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 42px;
+    height: 42px;
+    border: none;
+    border-radius: 50%;
+    background: rgba(23, 105, 224, 0.9);
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.slider-btn.left {
+    left: 10px;
+}
+
+.slider-btn.right {
+    right: 10px;
+}
+
+@media (max-width: 600px) {
+
+    .work-slide {
+        height: 280px;
+    }
+
+    .slider-btn {
+        width: 38px;
+        height: 38px;
+        font-size: 21px;
+    }
 
 /* =========================
    SITE WORK
@@ -572,7 +639,49 @@ footer {
     </h3>
 
 </section>
+<!-- SITE WORK -->
 
+<section class="card">
+
+    <h2>Our Site Work</h2>
+
+    <div class="work-slider">
+
+        <button class="slider-btn left" onclick="moveSlide(-1)">
+            ❮
+        </button>
+
+        <div class="work-images">
+
+            <img src="site-work-1.png"
+                 alt="Electrical Panel Wiring Work"
+                 class="work-slide">
+
+            <img src="site-work-2.png"
+                 alt="AHU Service Work"
+                 class="work-slide">
+
+            <img src="site-work-3.png"
+                 alt="Pump and Motor Installation"
+                 class="work-slide">
+
+            <img src="site-work-4.png"
+                 alt="Chiller Maintenance Work"
+                 class="work-slide">
+
+            <img src="site-work-5.png"
+                 alt="HVAC MEP Site Work"
+                 class="work-slide">
+
+        </div>
+
+        <button class="slider-btn right" onclick="moveSlide(1)">
+            ❯
+        </button>
+
+    </div>
+
+</section>
 
 <!-- SITE WORK -->
 
@@ -584,6 +693,25 @@ footer {
         src="Our-Site-work.png"
         alt="HS Bukhari Site Work"
         class="site-work-image">
+
+</section> class="card">
+
+    <h2>HVAC & MEP Installation Guide</h2>
+
+    <p style="text-align:center;">
+        Chillers, AHUs, Electrical Panels & Heat Exchangers
+    </p>
+
+    <div style="text-align:center; margin-top:15px;">
+
+        <a
+            href="HS_Bukhari_HVAC_MEP_Installation_Work.pdf"
+            target="_blank"
+            class="btn email">
+            📄 View HVAC & MEP PDF
+        </a>
+
+    </div>
 
 </section>
 
@@ -611,5 +739,35 @@ function closeProfileImage() {
 
 </script>
 
+
+let currentSlide = 0;
+
+const slides = document.querySelectorAll(".work-slide");
+
+function showSlide(index) {
+
+    if (index >= slides.length) {
+        currentSlide = 0;
+    }
+
+    if (index < 0) {
+        currentSlide = slides.length - 1;
+    }
+
+    slides.forEach(slide => {
+        slide.classList.remove("active");
+    });
+
+    slides[currentSlide].classList.add("active");
+}
+
+function moveSlide(direction) {
+    currentSlide += direction;
+    showSlide(currentSlide);
+}
+
+showSlide(currentSlide);
+
+</script>
 </body>
 </html>
