@@ -51,18 +51,11 @@ content="HS Bukhari Engineering & HVAC Services | Karachi">
 
 
 <meta property="og:description"
-content="Professional HVAC & MEP services, installation and maintenance solutions in Karachi.">
+content="Professional HVAC & MEP services including installation, maintenance and site work in Karachi.">
 
 
 <meta property="og:url"
 content="https://hsbukhariofficial.github.io/">
-
-
-
-<meta property="og:image"
-content="https://hsbukhariofficial.github.io/company-profile.png">
-
-
 
 
 
@@ -71,38 +64,27 @@ content="https://hsbukhariofficial.github.io/company-profile.png">
 {
 "@context":"https://schema.org",
 "@type":"HVACBusiness",
-
 "name":"HS Bukhari Engineering & HVAC Services",
-
 "url":"https://hsbukhariofficial.github.io/",
-
-"logo":"https://hsbukhariofficial.github.io/company-profile.png",
-
 "telephone":"+923062739157",
-
-"email":"hs.Bukhari.oficial2025@gmail.com",
-
 "address":{
 "@type":"PostalAddress",
 "addressLocality":"Karachi",
 "addressRegion":"Sindh",
 "addressCountry":"PK"
 },
-
 "serviceType":[
 "HVAC Installation",
 "HVAC Maintenance",
-"Chiller Maintenance",
+"Chiller Services",
 "AHU Services",
 "MEP Services",
 "Electrical Work",
 "Plumbing Services"
 ]
-
 }
 
 </script>
-
 
 
 <style>
@@ -136,7 +118,6 @@ display:block;
 }
 
 
-/* HEADER */
 
 header{
 
@@ -158,14 +139,11 @@ font-size:28px;
 
 header p{
 
-margin:10px 0 0;
+margin-top:10px;
 font-size:16px;
 
 }
 
-
-
-/* CONTAINER */
 
 
 .container{
@@ -178,92 +156,16 @@ padding:0 12px;
 
 
 
-/* PROFILE */
-
-
-.business-profile{
-
-text-align:center;
-margin:20px 0;
-
-}
-
-
-.business-profile-image{
-
-width:130px;
-height:150px;
-object-fit:contain;
-background:white;
-padding:5px;
-border-radius:10px;
-border:3px solid #1769e0;
-margin:auto;
-cursor:pointer;
-box-shadow:0 3px 12px rgba(0,0,0,0.12);
-
-}
-
-
-.profile-view-btn{
-
-display:block;
-margin:12px auto;
-padding:10px 20px;
-background:#1769e0;
-color:white;
-border:none;
-border-radius:7px;
-font-weight:bold;
-cursor:pointer;
-
-}
-
-
-
-/* FULL IMAGE VIEW */
-
-
-.profile-image-viewer{
-
-display:none;
-position:fixed;
-z-index:9999;
-top:0;
-left:0;
-width:100%;
-height:100%;
-background:rgba(0,0,0,0.9);
-align-items:center;
-justify-content:center;
-padding:20px;
-
-}
-
-
-.profile-image-viewer img{
-
-max-width:95%;
-max-height:90%;
-object-fit:contain;
-
-}
-
-
-
-/* CARD */
-
-
 .card{
 
 background:white;
 border-radius:14px;
 padding:25px;
 margin:20px auto;
-max-width:900px;
 box-shadow:0 3px 12px rgba(0,0,0,0.08);
 
 }
+
 
 
 h2{
@@ -281,7 +183,34 @@ text-align:center;
 line-height:1.8;
 font-size:16px;
 
-}<!-- HEADER -->
+}
+
+
+.services{
+
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:12px;
+
+}
+
+
+.service{
+
+background:#f2f6fc;
+padding:15px 10px;
+border-radius:9px;
+text-align:center;
+font-weight:bold;
+
+}
+
+
+</style>
+
+</head>
+
+<body><!-- HEADER -->
 
 <header>
 
@@ -303,44 +232,29 @@ Professional HVAC & MEP Services
 
 <!-- COMPANY PROFILE -->
 
-<div class="business-profile">
+<section class="card">
+
+<div style="text-align:center;">
+
 
 <img
 src="company-profile.png?v=5"
-alt="HS Bukhari Engineering & HVAC Services Business Profile"
-class="business-profile-image"
-onclick="openProfileImage()"
->
+alt="HS Bukhari Engineering Company Profile"
+style="
+width:130px;
+height:150px;
+object-fit:contain;
+margin:auto;
+border:3px solid #1769e0;
+border-radius:10px;
+padding:5px;
+">
 
-
-<button
-class="profile-view-btn"
-onclick="openProfileImage()"
->
-
-👁️ View Profile
-
-</button>
 
 </div>
 
 
-
-
-<!-- FULL SCREEN PROFILE -->
-
-<div
-id="profileImageViewer"
-class="profile-image-viewer"
-onclick="closeProfileImage()"
->
-
-<img
-src="company-profile.png?v=5"
-alt="HS Bukhari Engineering & HVAC Services"
->
-
-</div>
+</section>
 
 
 
@@ -357,23 +271,25 @@ About Our Business
 
 <div class="profile-text">
 
+
 <p>
 
 <strong>
 HS Bukhari Engineering & HVAC Services
 </strong>
 
-provides professional HVAC and MEP engineering solutions
-for residential, commercial and industrial projects.
+is a professional HVAC & MEP service provider
+offering reliable engineering solutions for residential,
+commercial and industrial projects.
 
 </p>
 
 
+<p>
 
-
-We specialize in HVAC installation, maintenance,
-chiller systems, AHU services, electrical works,
-plumbing and complete technical site support.
+Our expertise includes HVAC installation,
+maintenance, chiller systems, AHU services,
+electrical works, plumbing and technical site support.
 
 </p>
 
@@ -388,8 +304,8 @@ plumbing and complete technical site support.
 
 <!-- SERVICES -->
 
-
 <section class="card">
+
 
 <h2>
 Our HVAC & MEP Services
@@ -447,56 +363,7 @@ Our HVAC & MEP Services
 
 
 
-
-<!-- WHY CHOOSE US -->
-
-
-<section class="card">
-
-
-<h2>
-Why Choose Us?
-</h2>
-
-
-<div class="profile-text">
-
-
-✔️ Professional Engineering Services
-
-<br>
-
-✔️ Quality Installation Work
-
-<br>
-
-✔️ Reliable Maintenance Support
-
-<br>
-
-✔️ Experienced Technical Team
-
-<br>
-
-✔️ Residential & Commercial Projects
-
-<br>
-
-✔️ Safe and Proper Installation
-
-
-</div>
-
-
-</section>
-
-
-
-
-
-
 <!-- OWNER DOCUMENTS -->
-
 
 <section class="card">
 
@@ -506,9 +373,7 @@ Owner Profile & Documents
 </h2>
 
 
-
 <div class="services">
-
 
 
 <div class="service">
@@ -522,7 +387,6 @@ View
 </a>
 
 </div>
-
 
 
 
@@ -540,8 +404,6 @@ View
 
 
 
-
-
 <div class="service">
 
 🛠️ Experience
@@ -553,8 +415,6 @@ View
 </a>
 
 </div>
-
-
 
 
 
@@ -572,8 +432,6 @@ View
 
 
 
-
-
 <div class="service">
 
 📄 Certificates
@@ -587,6 +445,79 @@ View
 </div>
 
 
+</div>
+
+
+</section>
+
+
+
+
+
+<!-- WHY CHOOSE US -->
+
+
+<section class="card">
+
+
+<h2>
+Why Choose HS Bukhari?
+</h2>
+
+
+<div class="profile-text">
+
+
+✔️ Professional HVAC & MEP Solutions
+
+<br>
+
+✔️ Quality Installation Work
+
+<br>
+
+✔️ Reliable Maintenance Support
+
+<br>
+
+✔️ Residential & Commercial Projects
+
+<br>
+
+✔️ Safe and Technical Approach
+
+<br>
+
+✔️ Customer Satisfaction
+
+
+</div>
+
+
+</section><!-- PROJECTS -->
+
+<section class="card">
+
+<h2>
+Projects 2025 - 2026
+</h2>
+
+
+<div class="profile-text">
+
+Our HVAC & MEP project portfolio includes:
+
+<br><br>
+
+❄️ HVAC Installation Projects
+<br>
+🛠️ Preventive Maintenance Work
+<br>
+🌬️ AHU & Chiller Services
+<br>
+⚡ Electrical & Control Panel Work
+<br>
+🏢 Commercial Site Solutions
 
 </div>
 
@@ -597,9 +528,7 @@ View
 
 
 
-
 <!-- QR CODE -->
-
 
 <section class="card">
 
@@ -611,14 +540,25 @@ Website QR Code
 
 <img
 src="qr-code.png"
-alt="HS Bukhari Engineering Website QR Code"
-class="qr-code"
->
+alt="HS Bukhari Website QR Code"
+style="
+width:160px;
+height:160px;
+object-fit:contain;
+margin:auto;
+">
 
 
-</section><!-- CONTACT -->
+</section>
 
-<section class="contact-section">
+
+
+
+
+<!-- CONTACT -->
+
+
+<section class="contact-section card">
 
 
 <h2>
@@ -626,36 +566,28 @@ Contact HS Bukhari Engineering & HVAC Services
 </h2>
 
 
-<div class="buttons">
+<div class="buttons"
+style="text-align:center;">
 
 
 <a
 href="https://wa.me/923062739157"
 class="btn whatsapp"
-target="_blank"
-rel="noopener"
->
+target="_blank">
+
 WhatsApp
+
 </a>
 
 
 
 <a
 href="tel:+923062739157"
-class="btn call"
->
-Call Us
+class="btn call">
+
+Call Now
+
 </a>
-
-
-
-<a
-href="mailto:hs.Bukhari.oficial2025@gmail.com"
-class="btn email"
->
-Email Us
-</a>
-
 
 
 </div>
@@ -675,10 +607,7 @@ Email Us
 
 
 
-
-
-<!-- OUR SITE WORK -->
-
+<!-- SITE WORK -->
 
 <section class="card">
 
@@ -688,91 +617,24 @@ Our HVAC & MEP Site Work
 </h2>
 
 
-
-<div class="work-slider">
-
-
-<button
-type="button"
-class="slider-btn left"
-onclick="moveSlide(-1)"
->
-❮
-</button>
+<div style="text-align:center;">
 
 
+<img
+src="site-work-1.png"
+alt="HVAC Site Work"
+style="
+width:100%;
+max-width:800px;
+border-radius:10px;
+">
 
 
-<div class="work-images">
+<p>
 
+More project images available in our portfolio.
 
-<img src="site-work-1.png"
-class="work-slide"
-alt="HVAC Site Work 1">
-
-
-<img src="site-work-2.png"
-class="work-slide"
-alt="HVAC Site Work 2">
-
-
-<img src="site-work-3.png"
-class="work-slide"
-alt="HVAC Site Work 3">
-
-
-<img src="site-work-4.png"
-class="work-slide"
-alt="HVAC Site Work 4">
-
-
-<img src="site-work-5.png"
-class="work-slide"
-alt="HVAC Site Work 5">
-
-
-<img src="site-work-6.png"
-class="work-slide"
-alt="HVAC Site Work 6">
-
-
-<img src="site-work-7.png"
-class="work-slide"
-alt="HVAC Site Work 7">
-
-
-<img src="site-work-8.png"
-class="work-slide"
-alt="HVAC Site Work 8">
-
-
-<img src="site-work-9.png"
-class="work-slide"
-alt="HVAC Site Work 9">
-
-
-<img src="site-work-10.png"
-class="work-slide"
-alt="HVAC Site Work 10">
-
-
-<img src="ahu service work.png"
-class="work-slide"
-alt="AHU Service Work">
-
-
-</div>
-
-
-
-
-<button
-type="button"
-class="slider-btn right"
-onclick="moveSlide(1)"
->
-❯
-</button>
+</p>
 
 
 </div>
@@ -784,38 +646,35 @@ onclick="moveSlide(1)"
 
 
 
-
-<!-- PDF GUIDE -->
+<!-- PDF -->
 
 
 <section class="card">
 
 
 <h2>
-HVAC & MEP Installation Guide
+HVAC & MEP Company Profile
 </h2>
 
 
+<p class="profile-text">
 
-<p class="pdf-text">
-
-Chillers, AHUs, Electrical Panels & Heat Exchangers
+Chillers, AHUs, Electrical Panels,
+Heat Exchangers and MEP Installation Guide.
 
 </p>
 
 
-
-<div style="text-align:center;margin-top:20px;">
+<div style="text-align:center;">
 
 
 <a
 href="HS_Bukhari_HVAC_MEP_Installation_Work.pdf"
 target="_blank"
-rel="noopener"
-class="btn email"
->
+class="btn"
+style="background:#1769e0;">
 
-📄 View HVAC & MEP PDF
+📄 View PDF Profile
 
 </a>
 
@@ -824,7 +683,6 @@ class="btn email"
 
 
 </section>
-
 
 
 
@@ -845,124 +703,33 @@ All Rights Reserved
 
 
 
+</div>
 
 
 
-<!-- JAVASCRIPT -->
 
 
 <script>
 
 
-/* PROFILE IMAGE */
-
-
 function openProfileImage(){
 
-document
-.getElementById("profileImageViewer")
+document.getElementById("profileImageViewer")
 .style.display="flex";
 
 }
 
 
-
 function closeProfileImage(){
 
-document
-.getElementById("profileImageViewer")
+document.getElementById("profileImageViewer")
 .style.display="none";
 
 }
 
 
 
-
-
-
-/* SITE WORK SLIDER */
-
-
-let currentSlide = 0;
-
-
-const slides =
-document.querySelectorAll(".work-slide");
-
-
-
-function showSlide(index){
-
-
-if(slides.length===0){
-
-return;
-
-}
-
-
-
-if(index>=slides.length){
-
-currentSlide=0;
-
-}
-
-
-
-if(index<0){
-
-currentSlide=slides.length-1;
-
-}
-
-
-
-slides.forEach(function(slide){
-
-slide.classList.remove("active");
-
-});
-
-
-
-slides[currentSlide]
-.classList.add("active");
-
-
-}
-
-
-
-function moveSlide(direction){
-
-currentSlide += direction;
-
-showSlide(currentSlide);
-
-}
-
-
-
-showSlide(currentSlide);
-
-
-
-
-setInterval(function(){
-
-currentSlide++;
-
-showSlide(currentSlide);
-
-},4000);
-
-
-
 </script>
-
-
-</div>
 
 
 </body>
