@@ -25,12 +25,16 @@ content="HS Bukhari Engineering & HVAC Services">
 content="index, follow">
 
 
-<meta name="googlebot"
-content="index, follow">
-
-
 <meta name="theme-color"
 content="#1769e0">
+
+
+<meta name="geo.region"
+content="PK-SD">
+
+
+<meta name="geo.placename"
+content="Karachi, Sindh, Pakistan">
 
 
 <link rel="canonical"
@@ -38,16 +42,16 @@ href="https://hsbukhariofficial.github.io/">
 
 
 
+<meta property="og:type"
+content="website">
+
+
 <meta property="og:title"
-content="HS Bukhari Engineering & HVAC Services">
+content="HS Bukhari Engineering & HVAC Services | Karachi">
 
 
 <meta property="og:description"
-content="Professional HVAC & MEP Services in Karachi Pakistan">
-
-
-<meta property="og:type"
-content="website">
+content="Professional HVAC & MEP services including installation, maintenance and site work in Karachi.">
 
 
 <meta property="og:url"
@@ -67,13 +71,14 @@ content="https://hsbukhariofficial.github.io/">
 "@type":"PostalAddress",
 "addressLocality":"Karachi",
 "addressRegion":"Sindh",
-"addressCountry":"Pakistan"
+"addressCountry":"PK"
 },
 "serviceType":[
-"HVAC Services",
-"MEP Services",
-"Chiller Maintenance",
+"HVAC Installation",
+"HVAC Maintenance",
+"Chiller Services",
 "AHU Services",
+"MEP Services",
 "Electrical Work",
 "Plumbing Services"
 ]
@@ -82,8 +87,8 @@ content="https://hsbukhariofficial.github.io/">
 </script>
 
 
-
 <style>
+
 
 *{
 box-sizing:border-box;
@@ -105,6 +110,14 @@ color:#333;
 }
 
 
+img{
+
+max-width:100%;
+display:block;
+
+}
+
+
 
 header{
 
@@ -116,7 +129,6 @@ padding:30px 15px;
 }
 
 
-
 header h1{
 
 margin:0;
@@ -125,12 +137,20 @@ font-size:28px;
 }
 
 
+header p{
+
+margin-top:10px;
+font-size:16px;
+
+}
+
+
 
 .container{
 
 max-width:900px;
-margin:auto;
-padding:15px;
+margin:20px auto;
+padding:0 12px;
 
 }
 
@@ -141,8 +161,8 @@ padding:15px;
 background:white;
 border-radius:14px;
 padding:25px;
-margin:20px 0;
-box-shadow:0 3px 12px rgba(0,0,0,.08);
+margin:20px auto;
+box-shadow:0 3px 12px rgba(0,0,0,0.08);
 
 }
 
@@ -152,48 +172,45 @@ h2{
 
 color:#1769e0;
 text-align:center;
+margin-top:0;
 
 }
 
 
+.profile-text{
 
-.btn{
+text-align:center;
+line-height:1.8;
+font-size:16px;
 
-display:inline-block;
-padding:12px 22px;
-border-radius:8px;
-color:white;
-text-decoration:none;
+}
+
+
+.services{
+
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:12px;
+
+}
+
+
+.service{
+
+background:#f2f6fc;
+padding:15px 10px;
+border-radius:9px;
+text-align:center;
 font-weight:bold;
-margin:5px;
 
 }
-
-
-
-.whatsapp{
-
-background:#20c768;
-
-}
-
-
-
-.call{
-
-background:#16834e;
-
-}
-
 
 
 </style>
 
 </head>
 
-
-<body>
-<!-- HEADER -->
+<body><!-- HEADER -->
 
 <header>
 
@@ -208,7 +225,39 @@ Professional HVAC & MEP Services
 </header>
 
 
+
 <div class="container">
+
+
+
+<!-- COMPANY PROFILE -->
+
+<section class="card">
+
+<div style="text-align:center;">
+
+
+<img
+src="company-profile.png?v=5"
+alt="HS Bukhari Engineering Company Profile"
+style="
+width:130px;
+height:150px;
+object-fit:contain;
+margin:auto;
+border:3px solid #1769e0;
+border-radius:10px;
+padding:5px;
+">
+
+
+</div>
+
+
+</section>
+
+
+
 
 
 <!-- ABOUT -->
@@ -219,29 +268,44 @@ Professional HVAC & MEP Services
 About Our Business
 </h2>
 
-<p style="text-align:center;line-height:1.8;">
+
+<div class="profile-text">
+
+
+<p>
 
 <strong>
 HS Bukhari Engineering & HVAC Services
 </strong>
 
-provides professional Heating, Ventilation and Air Conditioning
-(HVAC) and Mechanical, Electrical & Plumbing (MEP) solutions.
-
-<br><br>
-
-We provide installation, maintenance and technical services for
-residential, commercial and industrial projects.
+is a professional HVAC & MEP service provider
+offering reliable engineering solutions for residential,
+commercial and industrial projects.
 
 </p>
 
+
+<p>
+
+Our expertise includes HVAC installation,
+maintenance, chiller systems, AHU services,
+electrical works, plumbing and technical site support.
+
+</p>
+
+
+</div>
+
 </section>
+
+
 
 
 
 <!-- SERVICES -->
 
 <section class="card">
+
 
 <h2>
 Our HVAC & MEP Services
@@ -277,7 +341,7 @@ Our HVAC & MEP Services
 
 
 <div class="service">
-🔌 Electrical Panel Installation
+🔌 Panel Installation
 </div>
 
 
@@ -297,76 +361,101 @@ Our HVAC & MEP Services
 
 
 
-<!-- OWNER PROFILE -->
+
+
+<!-- OWNER DOCUMENTS -->
 
 <section class="card">
+
 
 <h2>
 Owner Profile & Documents
 </h2>
 
 
-<p style="text-align:center;">
-Company owner profile and professional documents
-</p>
-
-
 <div class="services">
 
 
 <div class="service">
-📸 Profile Picture
-<br>
+
+📸 Profile
+
+<br><br>
+
 <a href="profile.html">
 View
 </a>
+
 </div>
 
 
+
 <div class="service">
+
 🎓 Education
-<br>
+
+<br><br>
+
 <a href="education.html">
 View
 </a>
+
 </div>
 
 
+
 <div class="service">
+
 🛠️ Experience
-<br>
+
+<br><br>
+
 <a href="experience.html">
 View
 </a>
+
 </div>
 
 
+
 <div class="service">
+
 📜 Licenses
-<br>
+
+<br><br>
+
 <a href="licenses.html">
 View
 </a>
+
 </div>
+
 
 
 <div class="service">
-💧 Certificates
-<br>
+
+📄 Certificates
+
+<br><br>
+
 <a href="certificates.html">
 View
 </a>
+
 </div>
 
 
 </div>
+
 
 </section>
 
 
 
 
+
 <!-- WHY CHOOSE US -->
+
 
 <section class="card">
 
@@ -376,102 +465,30 @@ Why Choose HS Bukhari?
 </h2>
 
 
-<p style="text-align:center;line-height:2;">
+<div class="profile-text">
 
-✔️ Quality Work
+
+✔️ Professional HVAC & MEP Solutions
+
 <br>
 
-✔️ Professional Service
+✔️ Quality Installation Work
+
 <br>
 
-✔️ Reliable Maintenance
+✔️ Reliable Maintenance Support
+
 <br>
 
 ✔️ Residential & Commercial Projects
+
 <br>
 
-✔️ Safe Installation
+✔️ Safe and Technical Approach
+
 <br>
 
 ✔️ Customer Satisfaction
-
-</p>
-
-
-</section>
-
-
-
-
-<!-- REQUEST SITE VISIT -->
-
-<section class="card">
-
-
-<h2>
-Request a Site Visit
-</h2>
-
-
-<p style="text-align:center;">
-For HVAC & MEP consultation contact us.
-</p>
-
-
-<div style="text-align:center;">
-
-
-<a class="btn whatsapp"
-href="https://wa.me/923062739157">
-
-WhatsApp Enquiry
-
-</a>
-
-
-<a class="btn call"
-href="tel:+923062739157">
-
-Call Now
-
-</a>
-
-
-</div>
-
-
-</section>
-
-
-
-
-<!-- FREE QUOTE -->
-
-
-<section class="card">
-
-
-<h2>
-Get Free Quote
-</h2>
-
-
-<p style="text-align:center;">
-
-Send your project details and get professional HVAC & MEP guidance.
-
-</p>
-
-
-<div style="text-align:center;">
-
-
-<a class="btn whatsapp"
-href="https://wa.me/923062739157">
-
-Get Quote on WhatsApp
-
-</a>
 
 
 </div>
@@ -485,76 +502,55 @@ Get Quote on WhatsApp
 Projects 2025 - 2026
 </h2>
 
-<p style="text-align:center;line-height:1.8;">
 
-Our HVAC & MEP site work portfolio includes:
+<div class="profile-text">
+
+Our HVAC & MEP project portfolio includes:
 
 <br><br>
 
 ❄️ HVAC Installation Projects
 <br>
-🛠️ Maintenance Work
+🛠️ Preventive Maintenance Work
 <br>
 🌬️ AHU & Chiller Services
 <br>
-⚡ Electrical & Panel Work
+⚡ Electrical & Control Panel Work
 <br>
-🏢 Commercial Site Projects
+🏢 Commercial Site Solutions
 
-</p>
+</div>
+
 
 </section>
 
 
 
 
-<!-- SERVICE AREA -->
+
+<!-- QR CODE -->
 
 <section class="card">
 
+
 <h2>
-Service Areas
+Website QR Code
 </h2>
 
 
-<p style="text-align:center;">
-
-📍 Karachi, Sindh, Pakistan
-
-<br><br>
-
-We provide HVAC & MEP services for residential,
-commercial and industrial projects.
-
-</p>
+<img
+src="qr-code.png"
+alt="HS Bukhari Website QR Code"
+style="
+width:160px;
+height:160px;
+object-fit:contain;
+margin:auto;
+">
 
 
 </section>
 
-
-
-
-<!-- CUSTOMER REVIEWS -->
-
-<section class="card">
-
-<h2>
-Customer Reviews
-</h2>
-
-
-<p style="text-align:center;">
-
-⭐ Your feedback helps us improve our services.
-
-<br><br>
-
-Google Reviews Coming Soon
-
-</p>
-
-
-</section>
 
 
 
@@ -562,8 +558,7 @@ Google Reviews Coming Soon
 <!-- CONTACT -->
 
 
-<section class="card"
-id="contact">
+<section class="contact-section card">
 
 
 <h2>
@@ -571,11 +566,13 @@ Contact HS Bukhari Engineering & HVAC Services
 </h2>
 
 
-<div style="text-align:center;">
+<div class="buttons"
+style="text-align:center;">
 
 
-<a class="btn whatsapp"
+<a
 href="https://wa.me/923062739157"
+class="btn whatsapp"
 target="_blank">
 
 WhatsApp
@@ -584,10 +581,11 @@ WhatsApp
 
 
 
-<a class="btn call"
-href="tel:+923062739157">
+<a
+href="tel:+923062739157"
+class="btn call">
 
-Call Us
+Call Now
 
 </a>
 
@@ -595,11 +593,93 @@ Call Us
 </div>
 
 
-<h3 style="text-align:center;color:#1769e0;">
+
+<h3 class="location-heading">
 
 📍 Karachi, Pakistan 🇵🇰
 
 </h3>
+
+
+</section>
+
+
+
+
+
+<!-- SITE WORK -->
+
+<section class="card">
+
+
+<h2>
+Our HVAC & MEP Site Work
+</h2>
+
+
+<div style="text-align:center;">
+
+
+<img
+src="site-work-1.png"
+alt="HVAC Site Work"
+style="
+width:100%;
+max-width:800px;
+border-radius:10px;
+">
+
+
+<p>
+
+More project images available in our portfolio.
+
+</p>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+<!-- PDF -->
+
+
+<section class="card">
+
+
+<h2>
+HVAC & MEP Company Profile
+</h2>
+
+
+<p class="profile-text">
+
+Chillers, AHUs, Electrical Panels,
+Heat Exchangers and MEP Installation Guide.
+
+</p>
+
+
+<div style="text-align:center;">
+
+
+<a
+href="HS_Bukhari_HVAC_MEP_Installation_Work.pdf"
+target="_blank"
+class="btn"
+style="background:#1769e0;">
+
+📄 View PDF Profile
+
+</a>
+
+
+</div>
 
 
 </section>
@@ -613,16 +693,43 @@ Call Us
 
 <footer>
 
-
 © 2025 HS Bukhari Engineering & HVAC Services
 
 <br>
 
 All Rights Reserved
 
-
 </footer>
 
+
+
+</div>
+
+
+
+
+
+<script>
+
+
+function openProfileImage(){
+
+document.getElementById("profileImageViewer")
+.style.display="flex";
+
+}
+
+
+function closeProfileImage(){
+
+document.getElementById("profileImageViewer")
+.style.display="none";
+
+}
+
+
+
+</script>
 
 
 </body>
