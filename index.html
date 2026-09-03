@@ -1,0 +1,1827 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>
+        HS Bukhari Engineering & HVAC Services | HVAC & MEP Services Karachi
+    </title>
+
+    <meta
+        name="description"
+        content="HS Bukhari Engineering & HVAC Services provides professional HVAC, MEP, Chiller, AHU, Electrical, Plumbing, Installation and Maintenance services in Karachi, Pakistan."
+    >
+
+    <meta
+        name="keywords"
+        content="HVAC Karachi, MEP Karachi, Chiller Services Karachi, AHU Services, HVAC Installation, HVAC Maintenance, Electrical Work, Plumbing, Panel Work, HS Bukhari Engineering"
+    >
+
+    <meta name="author" content="HS Bukhari Engineering & HVAC Services">
+    <meta name="robots" content="index, follow">
+
+    <link
+        rel="canonical"
+        href="https://hsbukhariofficial.github.io/"
+    >
+
+    <!-- Open Graph -->
+    <meta
+        property="og:title"
+        content="HS Bukhari Engineering & HVAC Services"
+    >
+
+    <meta
+        property="og:description"
+        content="Professional HVAC & MEP Solutions in Karachi."
+    >
+
+    <meta
+        property="og:type"
+        content="website"
+    >
+
+    <meta
+        property="og:url"
+        content="https://hsbukhariofficial.github.io/"
+    >
+
+    <!-- CSS -->
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f3f7fc;
+            color: #1c2733;
+            line-height: 1.6;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .container {
+            width: 92%;
+            max-width: 1150px;
+            margin: auto;
+        }
+
+        /* TOP BAR */
+
+        .topbar {
+            background: #0b4fa8;
+            color: #fff;
+            padding: 9px 0;
+            font-size: 14px;
+        }
+
+        .topbar-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 15px;
+        }
+
+        /* HEADER */
+
+        header {
+            background: linear-gradient(135deg, #1769e0, #0b4fa8);
+            color: #fff;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.12);
+        }
+
+        .header-inner {
+            min-height: 78px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .brand-mark {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background: #fff;
+            color: #0b4fa8;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 900;
+            font-size: 18px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+        }
+
+        .brand-text strong {
+            display: block;
+            font-size: 19px;
+            letter-spacing: 1px;
+        }
+
+        .brand-text span {
+            display: block;
+            font-size: 12px;
+            opacity: .9;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            gap: 7px;
+        }
+
+        nav a {
+            color: #fff;
+            padding: 9px 12px;
+            border-radius: 6px;
+            font-weight: 600;
+            font-size: 14px;
+            transition: .3s;
+        }
+
+        nav a:hover {
+            background: rgba(255,255,255,.16);
+        }
+
+        .mobile-menu {
+            display: none;
+            border: none;
+            background: rgba(255,255,255,.15);
+            color: #fff;
+            font-size: 26px;
+            padding: 5px 12px;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        /* HERO */
+
+        .hero {
+            background:
+                linear-gradient(
+                    135deg,
+                    rgba(11,79,168,.97),
+                    rgba(23,105,224,.92)
+                );
+            color: #fff;
+            padding: 90px 0 80px;
+        }
+
+        .hero-content {
+            max-width: 850px;
+        }
+
+        .badge {
+            display: inline-block;
+            background: rgba(255,255,255,.14);
+            border: 1px solid rgba(255,255,255,.25);
+            padding: 8px 14px;
+            border-radius: 30px;
+            font-size: 13px;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .hero h1 {
+            font-size: clamp(36px, 6vw, 62px);
+            line-height: 1.1;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            max-width: 750px;
+            font-size: 18px;
+            opacity: .95;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #fff;
+            color: #0b4fa8;
+            padding: 13px 22px;
+            border-radius: 7px;
+            font-weight: 800;
+            transition: .3s;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(0,0,0,.18);
+        }
+
+        /* STATS */
+
+        .stats {
+            margin-top: -35px;
+            position: relative;
+            z-index: 5;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 16px;
+        }
+
+        .stat {
+            background: #fff;
+            padding: 22px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 7px 25px rgba(23,52,90,.09);
+        }
+
+        .stat strong {
+            display: block;
+            color: #0b4fa8;
+            font-size: 27px;
+        }
+
+        .stat span {
+            color: #687789;
+            font-size: 13px;
+        }
+
+        /* SECTIONS */
+
+        section {
+            padding: 75px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 42px;
+        }
+
+        .section-title h2 {
+            font-size: 34px;
+            color: #12385f;
+            margin-bottom: 8px;
+        }
+
+        .section-title p {
+            color: #6d7b8b;
+            max-width: 700px;
+            margin: auto;
+        }
+
+        /* ABOUT */
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .about-box {
+            background: #fff;
+            padding: 32px;
+            border-radius: 15px;
+            box-shadow: 0 8px 30px rgba(23,52,90,.08);
+        }
+
+        .about-box h3 {
+            color: #0b4fa8;
+            margin-bottom: 15px;
+            font-size: 25px;
+        }
+
+        .about-box p {
+            color: #596a7c;
+            margin-bottom: 15px;
+        }
+
+        .about-list {
+            list-style: none;
+            margin-top: 18px;
+        }
+
+        .about-list li {
+            padding: 8px 0;
+            border-bottom: 1px solid #edf1f5;
+        }
+
+        .about-list li::before {
+            content: "✓";
+            color: #1769e0;
+            font-weight: bold;
+            margin-right: 9px;
+        }
+
+        .about-visual {
+            background: linear-gradient(135deg,#e9f2ff,#ffffff);
+            min-height: 350px;
+            border-radius: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 35px;
+            box-shadow: 0 8px 30px rgba(23,52,90,.08);
+        }
+
+        .about-visual-content {
+            color: #0b4fa8;
+        }
+
+        .about-visual-content .big-icon {
+            font-size: 70px;
+            margin-bottom: 15px;
+        }
+
+        .about-visual-content h3 {
+            font-size: 28px;
+        }
+
+        /* SERVICES */
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .service-card {
+            background: #fff;
+            padding: 28px 22px;
+            border-radius: 14px;
+            border: 1px solid #e7edf5;
+            box-shadow: 0 7px 24px rgba(23,52,90,.06);
+            transition: .3s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 14px 32px rgba(23,52,90,.12);
+        }
+
+        .service-icon {
+            width: 52px;
+            height: 52px;
+            border-radius: 12px;
+            background: #e8f1ff;
+            color: #0b4fa8;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 25px;
+            margin-bottom: 18px;
+        }
+
+        .service-card h3 {
+            color: #153e66;
+            font-size: 19px;
+            margin-bottom: 9px;
+        }
+
+        .service-card p {
+            color: #6a7888;
+            font-size: 14px;
+        }
+
+        /* SITE WORK */
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 16px;
+        }
+
+        .gallery-item {
+            background: #fff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 6px 22px rgba(23,52,90,.08);
+            cursor: pointer;
+            transition: .3s;
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-4px);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+        }
+
+        .gallery-caption {
+            padding: 12px;
+            font-weight: 700;
+            color: #24486c;
+            font-size: 14px;
+        }
+
+        /* PDF */
+
+        .pdf-box {
+            background: linear-gradient(135deg,#0b4fa8,#1769e0);
+            color: #fff;
+            padding: 45px 30px;
+            border-radius: 18px;
+            text-align: center;
+            box-shadow: 0 12px 35px rgba(11,79,168,.18);
+        }
+
+        .pdf-box .pdf-icon {
+            font-size: 58px;
+            margin-bottom: 15px;
+        }
+
+        .pdf-box h3 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        .pdf-box p {
+            max-width: 700px;
+            margin: 0 auto 25px;
+            opacity: .93;
+        }
+
+        .pdf-button {
+            display: inline-block;
+            background: #fff;
+            color: #0b4fa8;
+            padding: 13px 23px;
+            border-radius: 7px;
+            font-weight: 800;
+        }
+
+        /* QR */
+
+        .qr-section {
+            text-align: center;
+        }
+
+        .qr-box {
+            background: #fff;
+            width: fit-content;
+            max-width: 100%;
+            margin: auto;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 7px 25px rgba(23,52,90,.08);
+        }
+
+        .qr-box img {
+            width: 220px;
+            height: 220px;
+            object-fit: contain;
+            margin: auto;
+        }
+
+        .qr-box h3 {
+            margin-top: 15px;
+            color: #153e66;
+        }
+
+        /* CONTACT */
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;
+        }
+
+        .contact-info,
+        .contact-form {
+            background: #fff;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 7px 25px rgba(23,52,90,.08);
+        }
+
+        .contact-info h3,
+        .contact-form h3 {
+            color: #0b4fa8;
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+
+        .contact-item {
+            padding: 14px 0;
+            border-bottom: 1px solid #edf1f5;
+        }
+
+        .contact-item strong {
+            display: block;
+            color: #274a6d;
+            margin-bottom: 3px;
+        }
+
+        .contact-item span {
+            color: #6c7b8b;
+        }
+
+        .contact-item a {
+            color: #0b4fa8;
+            font-weight: 700;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 6px;
+            font-size: 14px;
+            font-weight: 700;
+            color: #385773;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            border: 1px solid #d9e2ec;
+            padding: 12px 13px;
+            border-radius: 7px;
+            font-family: inherit;
+            font-size: 15px;
+            outline: none;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            border-color: #1769e0;
+        }
+
+        .form-group textarea {
+            min-height: 140px;
+            resize: vertical;
+        }
+
+        .submit-btn {
+            width: 100%;
+            border: none;
+            cursor: pointer;
+            background: #0b4fa8;
+            color: #fff;
+            padding: 13px;
+            border-radius: 7px;
+            font-weight: 800;
+            font-size: 15px;
+        }
+
+        .submit-btn:hover {
+            background: #1769e0;
+        }
+
+        /* FOOTER */
+
+        footer {
+            background: #0c1d31;
+            color: #fff;
+            padding: 35px 0;
+            text-align: center;
+        }
+
+        footer h3 {
+            margin-bottom: 7px;
+        }
+
+        footer p {
+            color: #aebdcd;
+            font-size: 14px;
+        }
+
+        /* IMAGE MODAL */
+
+        .image-modal {
+            display: none;
+            position: fixed;
+            inset: 0;
+            background: rgba(0,0,0,.9);
+            z-index: 2000;
+            align-items: center;
+            justify-content: center;
+            padding: 25px;
+        }
+
+        .image-modal.active {
+            display: flex;
+        }
+
+        .modal-image {
+            max-width: 95%;
+            max-height: 90vh;
+            object-fit: contain;
+            border-radius: 8px;
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            color: #fff;
+            font-size: 40px;
+            cursor: pointer;
+            line-height: 1;
+        }
+
+        /* RESPONSIVE */
+
+        @media (max-width: 950px) {
+
+            .services-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .gallery-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            nav {
+                display: none;
+                position: absolute;
+                top: 78px;
+                left: 0;
+                right: 0;
+                background: #0b4fa8;
+                padding: 15px;
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            nav.active {
+                display: flex;
+            }
+
+            nav a {
+                text-align: center;
+            }
+
+            .mobile-menu {
+                display: block;
+            }
+        }
+
+        @media (max-width: 700px) {
+
+            .about-grid,
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .gallery-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .hero {
+                padding: 70px 0 65px;
+            }
+
+            section {
+                padding: 55px 0;
+            }
+
+            .section-title h2 {
+                font-size: 29px;
+            }
+
+            .topbar-content {
+                justify-content: center;
+                text-align: center;
+            }
+
+            .topbar-location {
+                display: none;
+            }
+        }
+
+        @media (max-width: 480px) {
+
+            .container {
+                width: 94%;
+            }
+
+            .brand-text strong {
+                font-size: 16px;
+            }
+
+            .brand-text span {
+                font-size: 10px;
+            }
+
+            .brand-mark {
+                width: 42px;
+                height: 42px;
+                font-size: 15px;
+            }
+
+            .hero h1 {
+                font-size: 34px;
+            }
+
+            .hero p {
+                font-size: 16px;
+            }
+
+            .stats-grid,
+            .services-grid,
+            .gallery-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .gallery-item img {
+                height: 240px;
+            }
+
+            .about-box,
+            .contact-info,
+            .contact-form {
+                padding: 23px;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+
+            html {
+                scroll-behavior: auto;
+            }
+
+            * {
+                transition: none !important;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- TOP BAR -->
+
+    <div class="topbar">
+        <div class="container topbar-content">
+
+            <div class="topbar-location">
+                Karachi, Pakistan
+            </div>
+
+            <div>
+                Call: <strong>0306 2739157</strong>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- HEADER -->
+
+    <header>
+
+        <div class="container header-inner">
+
+            <div class="brand">
+
+                <div class="brand-mark">
+                    HS
+                </div>
+
+                <div class="brand-text">
+                    <strong>HS BUKHARI</strong>
+                    <span>Engineering & HVAC Services</span>
+                </div>
+
+            </div>
+
+
+            <button
+                class="mobile-menu"
+                onclick="toggleMenu()"
+                aria-label="Open Menu"
+            >
+                ☰
+            </button>
+
+
+            <nav id="mainNav">
+
+                <a href="#home">Home</a>
+
+                <a href="#about">About</a>
+
+                <a href="#services">Services</a>
+
+                <a href="#site-work">Site Work</a>
+
+                <a href="#pdf">HVAC & MEP PDF</a>
+
+                <a href="#contact">Contact</a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <!-- HERO -->
+
+    <main id="home">
+
+        <section class="hero">
+
+            <div class="container">
+
+                <div class="hero-content">
+
+                    <div class="badge">
+                        HVAC • MEP • CHILLER • AHU • ELECTRICAL
+                    </div>
+
+                    <h1>
+                        Professional HVAC & MEP Solutions in Karachi
+                    </h1>
+
+                    <p>
+                        HS Bukhari Engineering & HVAC Services provides
+                        professional HVAC, Chiller, AHU, Electrical,
+                        Plumbing, Installation and Maintenance solutions
+                        for commercial, industrial and residential projects.
+                    </p>
+
+                    <a href="#contact" class="btn">
+                        Get a Free Quote
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- STATS -->
+
+        <section class="stats">
+
+            <div class="container">
+
+                <div class="stats-grid">
+
+                    <div class="stat">
+                        <strong>HVAC</strong>
+                        <span>Professional Services</span>
+                    </div>
+
+                    <div class="stat">
+                        <strong>MEP</strong>
+                        <span>Complete Solutions</span>
+                    </div>
+
+                    <div class="stat">
+                        <strong>2025</strong>
+                        <span>HS Services</span>
+                    </div>
+
+                    <div class="stat">
+                        <strong>Karachi</strong>
+                        <span>Service Area</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ABOUT -->
+
+        <section id="about">
+
+            <div class="container">
+
+                <div class="section-title">
+
+                    <h2>About HS Bukhari</h2>
+
+                    <p>
+                        Reliable engineering and HVAC services for
+                        professional project requirements.
+                    </p>
+
+                </div>
+
+
+                <div class="about-grid">
+
+                    <div class="about-box">
+
+                        <h3>
+                            Engineering & HVAC Services
+                        </h3>
+
+                        <p>
+                            HS Bukhari Engineering & HVAC Services
+                            provides practical and professional solutions
+                            for HVAC and MEP works in Karachi.
+                        </p>
+
+                        <p>
+                            Our services cover installation, maintenance,
+                            troubleshooting and site work with a focus
+                            on quality, safety and reliable operation.
+                        </p>
+
+                        <ul class="about-list">
+
+                            <li>
+                                HVAC Installation & Maintenance
+                            </li>
+
+                            <li>
+                                Chiller & AHU Services
+                            </li>
+
+                            <li>
+                                Electrical & Panel Work
+                            </li>
+
+                            <li>
+                                Plumbing & MEP Works
+                            </li>
+
+                            <li>
+                                Site Installation & Maintenance
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+
+                    <div class="about-visual">
+
+                        <div class="about-visual-content">
+
+                            <div class="big-icon">
+                                ⚙️
+                            </div>
+
+                            <h3>
+                                HS BUKHARI
+                            </h3>
+
+                            <p>
+                                Engineering & HVAC Services
+                            </p>
+
+                            <p>
+                                Karachi, Pakistan
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- SERVICES -->
+
+        <section id="services">
+
+            <div class="container">
+
+                <div class="section-title">
+
+                    <h2>Our Services</h2>
+
+                    <p>
+                        Complete HVAC, MEP and engineering services
+                        for different project requirements.
+                    </p>
+
+                </div>
+
+
+                <div class="services-grid">
+
+
+                    <div class="service-card">
+
+                        <div class="service-icon">
+                            ❄️
+                        </div>
+
+                        <h3>
+                            HVAC Installation
+                        </h3>
+
+                        <p>
+                            Installation of air conditioning systems,
+                            indoor and outdoor units, piping and related
+                            HVAC equipment.
+                        </p>
+
+                    </div>
+
+
+                    <div class="service-card">
+
+                        <div class="service-icon">
+                            ⚙️
+                        </div>
+
+                        <h3>
+                            Chiller Services
+                        </h3>
+
+                        <p>
+                            Chiller installation, operation, maintenance,
+                            troubleshooting and supporting HVAC works.
+                        </p>
+
+                    </div>
+
+
+                    <div class="service-card">
+
+                        <div class="service-icon">
+                            🌬️
+                        </div>
+
+                        <h3>
+                            AHU Services
+                        </h3>
+
+                        <p>
+                            AHU installation, maintenance, duct connection,
+                            inspection and system support.
+                        </p>
+
+                    </div>
+
+
+                    <div class="service-card">
+
+                        <div class="service-icon">
+                            ⚡
+                        </div>
+
+                        <h3>
+                            Electrical Work
+                        </h3>
+
+                        <p>
+                            Electrical installation, wiring, equipment
+                            connections and maintenance work.
+                        </p>
+
+                    </div>
+
+
+                    <div class="service-card">
+
+                        <div class="service-icon">
+                            🔌
+                        </div>
+
+                        <h3>
+                            Panel Work
+                        </h3>
+
+                        <p>
+                            Electrical control panel installation,
+                            components, wiring and maintenance support.
+                        </p>
+
+                    </div>
+
+
+                    <div class="service-card">
+
+                        <div class="service-icon">
+                            🚰
+                        </div>
+
+                        <h3>
+                            Plumbing
+                        </h3>
+
+                        <p>
+                            Plumbing installation, pipe fitting, tank,
+                            pump and related MEP works.
+                        </p>
+
+                    </div>
+
+
+                    <div class="service-card">
+
+                        <div class="service-icon">
+                            🔧
+                        </div>
+
+                        <h3>
+                            Maintenance
+                        </h3>
+
+                        <p>
+                            Preventive and corrective maintenance for
+                            HVAC, electrical and MEP systems.
+                        </p>
+
+                    </div>
+
+
+                    <div class="service-card">
+
+                        <div class="service-icon">
+                            🏗️
+                        </div>
+
+                        <h3>
+                            Site Work
+                        </h3>
+
+                        <p>
+                            Professional installation and engineering
+                            support for project and site requirements.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- SITE WORK -->
+
+        <section id="site-work">
+
+            <div class="container">
+
+                <div class="section-title">
+
+                    <h2>Our Site Work</h2>
+
+                    <p>
+                        Selected HVAC, MEP and engineering site work.
+                    </p>
+
+                </div>
+
+
+                <div class="gallery-grid">
+
+
+                    <div class="gallery-item"
+                         onclick="openImage('site-work.png')">
+
+                        <img
+                            src="site-work.png"
+                            alt="HVAC Site Work"
+                            loading="lazy"
+                        >
+
+                        <div class="gallery-caption">
+                            HVAC Site Work
+                        </div>
+
+                    </div>
+
+
+                    <div class="gallery-item"
+                         onclick="openImage('site-work-1.png')">
+
+                        <img
+                            src="site-work-1.png"
+                            alt="Site Work 1"
+                            loading="lazy"
+                        >
+
+                        <div class="gallery-caption">
+                            Site Work 01
+                        </div>
+
+                    </div>
+
+
+                    <div class="gallery-item"
+                         onclick="openImage('Site-work-2.png')">
+
+                        <img
+                            src="Site-work-2.png"
+                            alt="Site Work 2"
+                            loading="lazy"
+                        >
+
+                        <div class="gallery-caption">
+                            Site Work 02
+                        </div>
+
+                    </div>
+
+
+                    <div class="gallery-item"
+                         onclick="openImage('site-work-3.png')">
+
+                        <img
+                            src="site-work-3.png"
+                            alt="Site Work 3"
+                            loading="lazy"
+                        >
+
+                        <div class="gallery-caption">
+                            Site Work 03
+                        </div>
+
+                    </div>
+
+
+                    <div class="gallery-item"
+                         onclick="openImage('site-work-4.png')">
+
+                        <img
+                            src="site-work-4.png"
+                            alt="Site Work 4"
+                            loading="lazy"
+                        >
+
+                        <div class="gallery-caption">
+                            Site Work 04
+                        </div>
+
+                    </div>
+
+
+                    <div class="gallery-item"
+                         onclick="openImage('site-work-5.png')">
+
+                        <img
+                            src="site-work-5.png"
+                            alt="Site Work 5"
+                            loading="lazy"
+                        >
+
+                        <div class="gallery-caption">
+                            Site Work 05
+                        </div>
+
+                    </div>
+
+
+                    <div class="gallery-item"
+                         onclick="openImage('site-work-6.png')">
+
+                        <img
+                            src="site-work-6.png"
+                            alt="Site Work 6"
+                            loading="lazy"
+                        >
+
+                        <div class="gallery-caption">
+                            Site Work 06
+                        </div>
+
+                    </div>
+
+
+                    <div class="gallery-item"
+                         onclick="openImage('site-work-7.png')">
+
+                        <img
+                            src="site-work-7.png"
+                            alt="Site Work 7"
+                            loading="lazy"
+                        >
+
+                        <div class="gallery-caption">
+                            Site Work 07
+                        </div>
+
+                    </div>
+
+
+                    <div class="gallery-item"
+                         onclick="openImage('site-work-8.png')">
+
+                        <img
+                            src="site-work-8.png"
+                            alt="Site Work 8"
+                            loading="lazy"
+                        >
+
+                        <div class="gallery-caption">
+                            Site Work 08
+                        </div>
+
+                    </div>
+
+
+                    <div class="gallery-item"
+                         onclick="openImage('site-work-9.png')">
+
+                        <img
+                            src="site-work-9.png"
+                            alt="Site Work 9"
+                            loading="lazy"
+                        >
+
+                        <div class="gallery-caption">
+                            Site Work 09
+                        </div>
+
+                    </div>
+
+
+                    <div class="gallery-item"
+                         onclick="openImage('site-work-10.png')">
+
+                        <img
+                            src="site-work-10.png"
+                            alt="Site Work 10"
+                            loading="lazy"
+                        >
+
+                        <div class="gallery-caption">
+                            Site Work 10
+                        </div>
+
+                    </div>
+
+
+                    <div class="gallery-item"
+                         onclick="openImage('site-work-11.png')">
+
+                        <img
+                            src="site-work-11.png"
+                            alt="Site Work 11"
+                            loading="lazy"
+                        >
+
+                        <div class="gallery-caption">
+                            Site Work 11
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- PDF -->
+
+        <section id="pdf">
+
+            <div class="container">
+
+                <div class="pdf-box">
+
+                    <div class="pdf-icon">
+                        📄
+                    </div>
+
+                    <h3>
+                        HVAC & MEP Installation Work
+                    </h3>
+
+                    <p>
+                        View our HVAC and MEP installation work
+                        document and project information.
+                    </p>
+
+                    <a
+                        href="HS_Bukhari_HVAC_MEP_Installation_Work.pdf"
+                        target="_blank"
+                        class="pdf-button"
+                    >
+                        Open HVAC & MEP PDF
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- QR CODE -->
+
+        <section class="qr-section">
+
+            <div class="container">
+
+                <div class="section-title">
+
+                    <h2>Visit Our Website</h2>
+
+                    <p>
+                        Scan the QR code to open the HS Bukhari
+                        Engineering & HVAC Services website.
+                    </p>
+
+                </div>
+
+
+                <div class="qr-box">
+
+                    <img
+                        src="qr-code.png"
+                        alt="HS Bukhari Website QR Code"
+                        loading="lazy"
+                    >
+
+                    <h3>
+                        HS Bukhari Engineering
+                    </h3>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- CONTACT -->
+
+        <section id="contact">
+
+            <div class="container">
+
+                <div class="section-title">
+
+                    <h2>Contact Us</h2>
+
+                    <p>
+                        Contact us for HVAC, MEP, Chiller,
+                        AHU and engineering services.
+                    </p>
+
+                </div>
+
+
+                <div class="contact-grid">
+
+
+                    <div class="contact-info">
+
+                        <h3>
+                            Contact Information
+                        </h3>
+
+
+                        <div class="contact-item">
+
+                            <strong>
+                                Location
+                            </strong>
+
+                            <span>
+                                Karachi, Pakistan
+                            </span>
+
+                        </div>
+
+
+                        <div class="contact-item">
+
+                            <strong>
+                                Phone
+                            </strong>
+
+                            <a href="tel:+923062739157">
+                                0306 2739157
+                            </a>
+
+                        </div>
+
+
+                        <div class="contact-item">
+
+                            <strong>
+                                WhatsApp
+                            </strong>
+
+                            <a
+                                href="https://wa.me/923062739157"
+                                target="_blank"
+                            >
+                                Chat on WhatsApp
+                            </a>
+
+                        </div>
+
+
+                        <div class="contact-item">
+
+                            <strong>
+                                Email
+                            </strong>
+
+                            <a href="mailto:hs.Bukhari.oficial2025@gmail.com">
+                                Email Us
+                            </a>
+
+                        </div>
+
+
+                        <div class="contact-item">
+
+                            <strong>
+                                Services
+                            </strong>
+
+                            <span>
+                                HVAC • MEP • Chiller • AHU • Electrical • Plumbing
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- CONTACT FORM -->
+
+                    <div class="contact-form">
+
+                        <h3>
+                            Send a Message
+                        </h3>
+
+
+                        <form
+                            action="https://formsubmit.co/hs.Bukhari.oficial2025@gmail.com"
+                            method="POST"
+                        >
+
+                            <input
+                                type="hidden"
+                                name="_subject"
+                                value="New Website Enquiry - HS Bukhari Engineering"
+                            >
+
+                            <input
+                                type="hidden"
+                                name="_captcha"
+                                value="false"
+                            >
+
+                            <input
+                                type="hidden"
+                                name="_template"
+                                value="table"
+                            >
+
+
+                            <div class="form-group">
+
+                                <label for="name">
+                                    Name
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="name"
+                                    name="name"
+                                    placeholder="Your Name"
+                                    required
+                                >
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="email">
+                                    Email
+                                </label>
+
+                                <input
+                                    type="email"
+                                    id="email"
+                                    name="email"
+                                    placeholder="Your Email"
+                                    required
+                                >
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="phone">
+                                    Phone
+                                </label>
+
+                                <input
+                                    type="tel"
+                                    id="phone"
+                                    name="phone"
+                                    placeholder="Your Phone Number"
+                                >
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="message">
+                                    Message
+                                </label>
+
+                                <textarea
+                                    id="message"
+                                    name="message"
+                                    placeholder="Write your requirement..."
+                                    required
+                                ></textarea>
+
+                            </div>
+
+
+                            <button
+                                type="submit"
+                                class="submit-btn"
+                            >
+                                Send Message
+                            </button>
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <div class="container">
+
+            <h3>
+                HS BUKHARI ENGINEERING & HVAC SERVICES
+            </h3>
+
+            <p>
+                Professional HVAC & MEP Solutions in Karachi
+            </p>
+
+            <p>
+                © 2026 HS Services | All Rights Reserved
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- IMAGE MODAL -->
+
+    <div
+        class="image-modal"
+        id="imageModal"
+        onclick="closeImage()"
+    >
+
+        <span
+            class="modal-close"
+            onclick="closeImage()"
+        >
+            &times;
+        </span>
+
+        <img
+            class="modal-image"
+            id="modalImage"
+            src=""
+            alt="Site Work Preview"
+            onclick="event.stopPropagation()"
+        >
+
+    </div>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script>
+
+        function toggleMenu() {
+
+            const nav = document.getElementById("mainNav");
+
+            nav.classList.toggle("active");
+
+        }
+
+
+        function openImage(image) {
+
+            const modal =
+                document.getElementById("imageModal");
+
+            const modalImage =
+                document.getElementById("modalImage");
+
+            modalImage.src = image;
+
+            modal.classList.add("active");
+
+            document.body.style.overflow = "hidden";
+
+        }
+
+
+        function closeImage() {
+
+            const modal =
+                document.getElementById("imageModal");
+
+            modal.classList.remove("active");
+
+            document.body.style.overflow = "";
+
+        }
+
+
+        document.addEventListener(
+            "keydown",
+            function(event) {
+
+                if (event.key === "Escape") {
+
+                    closeImage();
+
+                }
+
+            }
+        );
+
+
+        document.querySelectorAll("#mainNav a")
+            .forEach(function(link) {
+
+                link.addEventListener(
+                    "click",
+                    function() {
+
+                        document
+                            .getElementById("mainNav")
+                            .classList.remove("active");
+
+                    }
+                );
+
+            });
+
+    </script>
+
+</body>
+
+</html>
