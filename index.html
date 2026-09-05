@@ -15,13 +15,16 @@
 
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
+
 html{scroll-behavior:smooth}
+
 body{
 font-family:Arial,Helvetica,sans-serif;
 background:#f3f7fc;
 color:#333;
 line-height:1.6
 }
+
 a{text-decoration:none}
 img{max-width:100%}
 
@@ -35,6 +38,7 @@ text-align:center;
 padding:55px 20px;
 overflow:hidden
 }
+
 header::before{
 content:"";
 position:absolute;
@@ -42,7 +46,11 @@ inset:0;
 background:linear-gradient(135deg,rgba(5,45,95,.78),rgba(5,30,65,.84));
 z-index:0
 }
-header>*{position:relative;z-index:1}
+
+header>*{
+position:relative;
+z-index:1
+}
 
 .logo-circle{
 width:120px;
@@ -56,7 +64,11 @@ cursor:pointer;
 background:#fff;
 transition:.3s
 }
-.logo-circle:hover{transform:scale(1.08)}
+
+.logo-circle:hover{
+transform:scale(1.08)
+}
+
 .logo-circle img{
 width:100%;
 height:100%;
@@ -69,7 +81,10 @@ margin-bottom:12px;
 font-weight:800;
 text-shadow:0 2px 8px rgba(0,0,0,.35)
 }
-header p{font-size:18px}
+
+header p{
+font-size:18px
+}
 
 .header-badge{
 display:inline-block;
@@ -89,6 +104,7 @@ position:sticky;
 top:0;
 z-index:1000
 }
+
 .nav-container{
 max-width:1100px;
 margin:auto;
@@ -99,12 +115,16 @@ gap:25px;
 padding:14px 15px;
 flex-wrap:wrap
 }
+
 nav a{
 color:#1769e0;
 font-size:14px;
 font-weight:bold
 }
-nav a:hover{color:#0b4fa8}
+
+nav a:hover{
+color:#0b4fa8
+}
 
 .container{
 width:92%;
@@ -118,6 +138,7 @@ grid-template-columns:repeat(4,1fr);
 gap:15px;
 margin-bottom:25px
 }
+
 .stat{
 background:#fff;
 border-radius:14px;
@@ -125,12 +146,14 @@ padding:22px 15px;
 text-align:center;
 box-shadow:0 4px 15px rgba(0,0,0,.07)
 }
+
 .stat strong{
 display:block;
 color:#1769e0;
 font-size:24px;
 margin-bottom:5px
 }
+
 .stat span{
 color:#555;
 font-size:13px;
@@ -178,10 +201,12 @@ color:#174f91;
 transition:.3s;
 cursor:pointer
 }
+
 .service:hover{
 transform:translateY(-5px);
 box-shadow:0 8px 20px rgba(23,105,224,.16)
 }
+
 .service-icon{
 display:block;
 font-size:30px;
@@ -193,12 +218,14 @@ display:grid;
 grid-template-columns:repeat(3,1fr);
 gap:15px
 }
+
 .why-item{
 padding:20px;
 background:#f5f8fd;
 border-radius:12px;
 border-left:4px solid #1769e0
 }
+
 .why-item strong{
 display:block;
 color:#1769e0;
@@ -212,10 +239,12 @@ border:1px solid #dce9fb;
 padding:30px 20px;
 border-radius:14px
 }
+
 .document-icon{
 font-size:45px;
 margin-bottom:10px
 }
+
 .document-box p{
 margin-bottom:18px;
 color:#555
@@ -226,6 +255,7 @@ display:grid;
 grid-template-columns:repeat(3,1fr);
 gap:15px
 }
+
 .site-work-grid img{
 width:100%;
 height:230px;
@@ -235,7 +265,10 @@ cursor:pointer;
 box-shadow:0 4px 12px rgba(0,0,0,.1);
 transition:.3s
 }
-.site-work-grid img:hover{transform:scale(1.02)}
+
+.site-work-grid img:hover{
+transform:scale(1.02)
+}
 
 .buttons{
 display:flex;
@@ -256,11 +289,15 @@ transition:.3s;
 border:none;
 cursor:pointer
 }
+
 .btn:hover{
 transform:translateY(-2px);
 box-shadow:0 5px 14px rgba(0,0,0,.15)
 }
-.email{background:#1769e0}
+
+.email{
+background:#1769e0
+}
 
 .quote-section{
 position:relative;
@@ -277,28 +314,33 @@ background-image:url("company-profile.png");
 background-size:cover;
 background-position:center
 }
+
 .quote-section::before{
 content:"";
 position:absolute;
 inset:0;
 background:linear-gradient(rgba(5,35,75,.78),rgba(5,35,75,.82))
 }
+
 .quote-content{
 position:relative;
 z-index:2;
 color:#fff;
 max-width:750px
 }
+
 .quote-content h2{
 color:#fff;
 font-size:34px;
 margin-bottom:12px
 }
+
 .quote-content p{
 font-size:17px;
 line-height:1.8;
 margin-bottom:20px
 }
+
 .quote-btn{
 background:#fff;
 color:#1769e0;
@@ -314,12 +356,14 @@ grid-template-columns:repeat(2,1fr);
 gap:20px;
 align-items:stretch
 }
+
 .contact-info{
 background:#f5f8fd;
 border-radius:14px;
 padding:25px;
 text-align:center
 }
+
 .contact-info h3,
 form h3,
 .feedback-form h3,
@@ -328,11 +372,15 @@ color:#1769e0;
 text-align:center;
 margin-bottom:15px
 }
+
 .contact-item{
 margin:12px 0;
 color:#444
 }
-.contact-item strong{color:#1769e0}
+
+.contact-item strong{
+color:#1769e0
+}
 
 form{
 background:#f5f8fd;
@@ -340,7 +388,8 @@ border-radius:14px;
 padding:25px
 }
 
-input,textarea{
+input,
+textarea{
 width:100%;
 padding:13px;
 margin-bottom:13px;
@@ -350,7 +399,12 @@ font-family:inherit;
 font-size:14px;
 outline:none
 }
-input:focus,textarea:focus{border-color:#1769e0}
+
+input:focus,
+textarea:focus{
+border-color:#1769e0
+}
+
 textarea{
 min-height:120px;
 resize:vertical
@@ -366,12 +420,16 @@ border-radius:8px;
 font-weight:bold;
 cursor:pointer
 }
-form button:hover{background:#0b4fa8}
+
+form button:hover{
+background:#0b4fa8
+}
 
 .qr-section{
 text-align:center;
 margin-top:25px
 }
+
 .qr-section img{
 width:150px;
 height:150px;
@@ -381,6 +439,7 @@ padding:8px;
 border-radius:10px;
 box-shadow:0 4px 15px rgba(0,0,0,.08)
 }
+
 .qr-section p{
 margin-top:10px;
 color:#666;
@@ -521,24 +580,10 @@ text-align:center;
 color:#777
 }
 
-/* ADMIN */
-
-.admin-panel{
-display:none;
-margin-top:25px;
-background:#f5f8fd;
-border:1px solid #dce9fb;
-border-radius:15px;
-padding:25px
-}
-
-.admin-panel h3{
-color:#1769e0;
-text-align:center;
-margin-bottom:18px
-}
+/* HIDDEN ADMIN */
 
 .admin-login{
+display:none;
 max-width:500px;
 margin:25px auto 0;
 background:#f5f8fd;
@@ -558,6 +603,21 @@ font-weight:bold;
 margin-top:12px
 }
 
+.admin-panel{
+display:none;
+margin-top:25px;
+background:#f5f8fd;
+border:1px solid #dce9fb;
+border-radius:15px;
+padding:25px
+}
+
+.admin-panel h3{
+color:#1769e0;
+text-align:center;
+margin-bottom:18px
+}
+
 .admin-actions{
 display:flex;
 gap:8px;
@@ -574,9 +634,13 @@ color:#fff;
 cursor:pointer
 }
 
-.approve-btn{background:#198754}
-.delete-btn{background:#dc3545}
-.logout-btn{background:#555}
+.delete-btn{
+background:#dc3545
+}
+
+.logout-btn{
+background:#555
+}
 
 .pending-card{
 background:#fff;
@@ -614,6 +678,13 @@ color:#777;
 padding:15px
 }
 
+.admin-secret-note{
+text-align:center;
+font-size:12px;
+color:#888;
+margin-top:10px
+}
+
 /* MODALS */
 
 .service-modal,
@@ -638,7 +709,9 @@ position:relative;
 text-align:center
 }
 
-.service-modal-icon{font-size:48px}
+.service-modal-icon{
+font-size:48px
+}
 
 .service-modal-content h3{
 color:#1769e0;
@@ -646,7 +719,9 @@ font-size:25px;
 margin:10px
 }
 
-.service-modal-content p{color:#555}
+.service-modal-content p{
+color:#555
+}
 
 .service-modal-close,
 .close-modal{
@@ -686,35 +761,94 @@ margin-top:35px;
 font-size:14px
 }
 
-footer strong{color:#6ea8ff}
+footer strong{
+color:#6ea8ff
+}
 
 @media(max-width:900px){
-.services{grid-template-columns:repeat(2,1fr)}
-.site-work-grid{grid-template-columns:repeat(2,1fr)}
-.why-grid{grid-template-columns:repeat(2,1fr)}
-.stats{grid-template-columns:repeat(2,1fr)}
+
+.services{
+grid-template-columns:repeat(2,1fr)
+}
+
+.site-work-grid{
+grid-template-columns:repeat(2,1fr)
+}
+
+.why-grid{
+grid-template-columns:repeat(2,1fr)
+}
+
+.stats{
+grid-template-columns:repeat(2,1fr)
+}
+
 }
 
 @media(max-width:650px){
-header{padding:40px 15px}
-header h1{font-size:24px}
-header p{font-size:15px}
-.logo-circle{width:100px;height:100px}
-.nav-container{gap:12px;padding:12px 8px}
-nav a{font-size:12px}
-.container{width:94%;margin-top:22px}
-.card{padding:22px 15px}
-h2{font-size:22px}
+
+header{
+padding:40px 15px
+}
+
+header h1{
+font-size:24px
+}
+
+header p{
+font-size:15px
+}
+
+.logo-circle{
+width:100px;
+height:100px
+}
+
+.nav-container{
+gap:12px;
+padding:12px 8px
+}
+
+nav a{
+font-size:12px
+}
+
+.container{
+width:94%;
+margin-top:22px
+}
+
+.card{
+padding:22px 15px
+}
+
+h2{
+font-size:22px
+}
+
 .services,
 .site-work-grid,
 .why-grid,
 .contact-grid{
 grid-template-columns:1fr
 }
-.site-work-grid img{height:220px}
-.quote-content h2{font-size:28px}
-.rating-stars-input button{font-size:36px}
-.review-top{align-items:flex-start}
+
+.site-work-grid img{
+height:220px
+}
+
+.quote-content h2{
+font-size:28px
+}
+
+.rating-stars-input button{
+font-size:36px
+}
+
+.review-top{
+align-items:flex-start
+}
+
 }
 </style>
 </head>
@@ -724,6 +858,7 @@ grid-template-columns:1fr
 <header>
 
 <div class="logo-circle"
+id="companyLogo"
 onclick="openImage('company-profile.png')"
 title="Click to view company profile">
 
@@ -974,7 +1109,7 @@ alt="HS Bukhari Site Work"
 loading="lazy"
 onclick="openImage(this.src)">
 
-<img src="Site-work-2.png"
+<img src="site-work-2.png"
 alt="HS Bukhari Site Work"
 loading="lazy"
 onclick="openImage(this.src)">
@@ -1075,7 +1210,7 @@ Please share your experience with HS Bukhari Engineering & HVAC Services.
 </div>
 
 <p id="totalReviews">
-No approved reviews yet
+No reviews yet
 </p>
 
 </div>
@@ -1106,13 +1241,28 @@ required>
 
 <p>Rate Our Service</p>
 
-<div class="rating-stars-input" id="ratingStars">
+<div class="rating-stars-input"
+id="ratingStars">
 
-<button type="button" data-rating="1" aria-label="1 Star">★</button>
-<button type="button" data-rating="2" aria-label="2 Stars">★</button>
-<button type="button" data-rating="3" aria-label="3 Stars">★</button>
-<button type="button" data-rating="4" aria-label="4 Stars">★</button>
-<button type="button" data-rating="5" aria-label="5 Stars">★</button>
+<button type="button"
+data-rating="1"
+aria-label="1 Star">★</button>
+
+<button type="button"
+data-rating="2"
+aria-label="2 Stars">★</button>
+
+<button type="button"
+data-rating="3"
+aria-label="3 Stars">★</button>
+
+<button type="button"
+data-rating="4"
+aria-label="4 Stars">★</button>
+
+<button type="button"
+data-rating="5"
+aria-label="5 Stars">★</button>
 
 </div>
 
@@ -1123,11 +1273,16 @@ id="feedbackText"
 placeholder="Write your feedback here..."
 required></textarea>
 
-<button type="submit">
+<button
+type="submit"
+id="feedbackSubmitButton">
+
 Submit Feedback
+
 </button>
 
-<p id="feedbackMessage" class="feedback-message"></p>
+<p id="feedbackMessage"
+class="feedback-message"></p>
 
 </form>
 
@@ -1138,16 +1293,20 @@ Submit Feedback
 <h3>Customer Reviews</h3>
 
 <div id="reviewsList">
+
 <p class="loading-reviews">
-Loading approved reviews...
+Loading customer reviews...
 </p>
-</div>
 
 </div>
 
-<!-- ADMIN AREA -->
+</div>
 
-<div class="admin-login">
+
+<!-- HIDDEN ADMIN LOGIN -->
+
+<div class="admin-login"
+id="adminLoginBox">
 
 <h3>🔐 Admin Login</h3>
 
@@ -1171,13 +1330,22 @@ required>
 Admin Login
 </button>
 
-<p id="adminLoginMessage" class="admin-status"></p>
+<p id="adminLoginMessage"
+class="admin-status"></p>
 
 </form>
 
+<p class="admin-secret-note">
+Admin access
+</p>
+
 </div>
 
-<div class="admin-panel" id="adminPanel">
+
+<!-- ADMIN PANEL -->
+
+<div class="admin-panel"
+id="adminPanel">
 
 <h3>⚙️ Admin Feedback Management</h3>
 
@@ -1196,12 +1364,12 @@ Logout
 
 <br>
 
-<h3>⏳ Pending Feedback</h3>
+<h3>Customer Feedback</h3>
 
 <div id="pendingReviews">
 
 <p class="pending-empty">
-Loading pending feedback...
+Loading feedback...
 </p>
 
 </div>
@@ -1209,6 +1377,7 @@ Loading pending feedback...
 </div>
 
 </section>
+
 
 <section class="card" id="contact">
 
@@ -1262,6 +1431,7 @@ Scan to visit our website
 </div>
 
 </div>
+
 
 <form action="https://api.web3forms.com/submit"
 method="POST">
@@ -1327,6 +1497,7 @@ Send Message
 
 </main>
 
+
 <!-- SERVICE MODAL -->
 
 <div class="service-modal"
@@ -1354,6 +1525,7 @@ id="serviceModalIcon">
 
 </div>
 
+
 <!-- IMAGE MODAL -->
 
 <div class="image-modal"
@@ -1369,9 +1541,10 @@ title="Close">
 <img id="modalImage"
 src=""
 alt="Full Image Preview"
-onclick="event.stopPropagation()">
+onclick="event.stopPropagation">
 
 </div>
+
 
 <footer>
 
@@ -1390,59 +1563,69 @@ All Rights Reserved
 
 </footer>
 
+
 <script>
+
+/* IMAGE MODAL */
 
 function openImage(src){
 
-const modal=document.getElementById("imageModal");
+const modal =
+document.getElementById("imageModal");
 
-document.getElementById("modalImage").src=src;
+document.getElementById("modalImage").src = src;
 
-modal.style.display="flex";
+modal.style.display = "flex";
 
-document.body.style.overflow="hidden";
+document.body.style.overflow = "hidden";
 
 }
 
 function closeImage(){
 
-document.getElementById("imageModal").style.display="none";
+document.getElementById("imageModal").style.display = "none";
 
-document.getElementById("modalImage").src="";
+document.getElementById("modalImage").src = "";
 
-document.body.style.overflow="";
+document.body.style.overflow = "";
 
 }
 
+
+/* SERVICE MODAL */
+
 function openService(icon,title,text){
 
-document.getElementById("serviceModalIcon").textContent=icon;
+document.getElementById("serviceModalIcon").textContent = icon;
 
-document.getElementById("serviceModalTitle").textContent=title;
+document.getElementById("serviceModalTitle").textContent = title;
 
-document.getElementById("serviceModalText").textContent=text;
+document.getElementById("serviceModalText").textContent = text;
 
-document.getElementById("serviceModal").style.display="flex";
+document.getElementById("serviceModal").style.display = "flex";
 
-document.body.style.overflow="hidden";
+document.body.style.overflow = "hidden";
 
 }
 
 function closeService(event){
 
 if(event &&
-event.target!==document.getElementById("serviceModal"))
+event.target !== document.getElementById("serviceModal"))
 return;
 
-document.getElementById("serviceModal").style.display="none";
+document.getElementById("serviceModal").style.display = "none";
 
-document.body.style.overflow="";
+document.body.style.overflow = "";
 
 }
 
+
+/* ESC KEY */
+
 document.addEventListener("keydown",function(event){
 
-if(event.key==="Escape"){
+if(event.key === "Escape"){
 
 closeImage();
 closeService();
@@ -1453,8 +1636,9 @@ closeService();
 
 </script>
 
+
 <!-- =====================================================
-     FIREBASE CUSTOMER FEEDBACK + ADMIN SYSTEM
+     FIREBASE FEEDBACK + HIDDEN ADMIN
 ===================================================== -->
 
 <script type="module">
@@ -1468,14 +1652,11 @@ getFirestore,
 collection,
 addDoc,
 getDocs,
-getDoc,
-doc,
 query,
 where,
-orderBy,
 serverTimestamp,
-updateDoc,
-deleteDoc
+deleteDoc,
+doc
 } from "https://www.gstatic.com/firebasejs/12.18.0/firebase-firestore.js";
 
 import {
@@ -1520,18 +1701,27 @@ const ADMIN_UID =
 "OYToCzQQImXta5i79BAwg9S3zAB";
 
 
-/* INITIALIZE */
+/* INITIALIZE FIREBASE */
 
-const app=initializeApp(firebaseConfig);
+const app =
+initializeApp(firebaseConfig);
 
-const db=getFirestore(app);
+const db =
+getFirestore(app);
 
-const auth=getAuth(app);
+const auth =
+getAuth(app);
 
-let selectedRating=0;
+
+/* VARIABLES */
+
+let selectedRating = 0;
 
 
 /* ELEMENTS */
+
+const feedbackForm =
+document.getElementById("feedbackForm");
 
 const ratingButtons =
 document.querySelectorAll("#ratingStars button");
@@ -1539,8 +1729,8 @@ document.querySelectorAll("#ratingStars button");
 const feedbackMessage =
 document.getElementById("feedbackMessage");
 
-const adminPanel =
-document.getElementById("adminPanel");
+const adminLoginBox =
+document.getElementById("adminLoginBox");
 
 const adminLoginForm =
 document.getElementById("adminLoginForm");
@@ -1548,55 +1738,41 @@ document.getElementById("adminLoginForm");
 const adminLoginMessage =
 document.getElementById("adminLoginMessage");
 
+const adminPanel =
+document.getElementById("adminPanel");
 
-/* STAR SELECTION */
 
-ratingButtons.forEach(button=>{
+/* STAR RATING */
+
+ratingButtons.forEach(button => {
 
 button.addEventListener("click",function(){
 
 selectedRating =
 Number(this.dataset.rating);
 
-updateStarSelection();
+ratingButtons.forEach(star => {
 
-});
-
-});
-
-
-function updateStarSelection(){
-
-ratingButtons.forEach(button=>{
-
-button.classList.toggle(
+star.classList.toggle(
 "active",
-Number(button.dataset.rating)<=selectedRating
+Number(star.dataset.rating) <= selectedRating
 );
 
 });
 
-}
+});
+
+});
 
 
-/* CUSTOMER FEEDBACK SUBMIT */
+/* CUSTOMER FEEDBACK */
 
-document
-.getElementById("feedbackForm")
-.addEventListener("submit",async function(event){
+feedbackForm.addEventListener(
+"submit",
+async function(event){
 
 event.preventDefault();
 
-if(selectedRating===0){
-
-feedbackMessage.textContent =
-"Please select your star rating.";
-
-feedbackMessage.style.color="red";
-
-return;
-
-}
 
 const name =
 document.getElementById("feedbackName")
@@ -1616,7 +1792,21 @@ if(!name || !mobile || !feedback){
 feedbackMessage.textContent =
 "Please complete all fields.";
 
-feedbackMessage.style.color="red";
+feedbackMessage.style.color =
+"red";
+
+return;
+
+}
+
+
+if(selectedRating < 1 || selectedRating > 5){
+
+feedbackMessage.textContent =
+"Please select your star rating.";
+
+feedbackMessage.style.color =
+"red";
 
 return;
 
@@ -1624,138 +1814,189 @@ return;
 
 
 const submitButton =
-this.querySelector("button[type='submit']");
+document.getElementById("feedbackSubmitButton");
 
-submitButton.disabled=true;
+submitButton.disabled = true;
 
-submitButton.textContent="Submitting...";
+submitButton.textContent =
+"Submitting...";
 
 
 try{
 
 /*
-   IMPORTANT:
-   New reviews are pending by default.
-*/
+ IMPORTANT:
+ Customer feedback is immediately visible.
+ */
 
 await addDoc(
 collection(db,"feedback"),
 {
 
-name:name,
+name: name,
 
-mobile:mobile,
+mobile: mobile,
 
-feedback:feedback,
+feedback: feedback,
 
-rating:selectedRating,
+rating: selectedRating,
 
-approved:false,
+approved: true,
 
-createdAt:serverTimestamp()
+createdAt: serverTimestamp()
 
 }
 );
 
 
 feedbackMessage.textContent =
-"Thank you! Your feedback has been submitted and is waiting for approval.";
+"Thank you! Your feedback has been submitted successfully.";
 
-feedbackMessage.style.color="green";
-
-
-this.reset();
-
-selectedRating=0;
-
-updateStarSelection();
+feedbackMessage.style.color =
+"green";
 
 
-await loadApprovedReviews();
+feedbackForm.reset();
+
+selectedRating = 0;
 
 
-}catch(error){
+ratingButtons.forEach(star => {
 
-console.error("Firebase Error:",error);
-
-feedbackMessage.textContent =
-"Unable to submit feedback. Please try again.";
-
-feedbackMessage.style.color="red";
-
-}
-
-
-submitButton.disabled=false;
-
-submitButton.textContent="Submit Feedback";
+star.classList.remove("active");
 
 });
 
 
-/* LOAD APPROVED REVIEWS */
+await loadReviews();
 
-async function loadApprovedReviews(){
+
+}
+catch(error){
+
+console.error(
+"Feedback Submit Error:",
+error
+);
+
+feedbackMessage.textContent =
+"Feedback submit nahi ho saki. Please try again.";
+
+feedbackMessage.style.color =
+"red";
+
+}
+
+
+submitButton.disabled = false;
+
+submitButton.textContent =
+"Submit Feedback";
+
+});
+
+
+/* LOAD PUBLIC REVIEWS */
+
+async function loadReviews(){
 
 const reviewsList =
 document.getElementById("reviewsList");
 
+
 reviewsList.innerHTML =
-"<p class='loading-reviews'>Loading approved reviews...</p>";
+"<p class='loading-reviews'>Loading customer reviews...</p>";
 
 
 try{
 
-const q=query(
-
+const q =
+query(
 collection(db,"feedback"),
-
-where("approved","==",true),
-
-orderBy("createdAt","desc")
-
+where("approved","==",true)
 );
+
 
 const snapshot =
 await getDocs(q);
 
 
-reviewsList.innerHTML="";
+/*
+ Convert to array and sort locally.
+ This avoids Firestore composite index problems.
+ */
+
+const reviews = [];
 
 
-let totalRating=0;
+snapshot.forEach(reviewDoc => {
 
-let totalReviews=0;
+reviews.push({
+
+id: reviewDoc.id,
+
+...reviewDoc.data()
+
+});
+
+});
 
 
-snapshot.forEach(reviewDoc=>{
+reviews.sort((a,b) => {
 
-const data=reviewDoc.data();
+const aTime =
+a.createdAt?.toMillis ?
+a.createdAt.toMillis() : 0;
+
+const bTime =
+b.createdAt?.toMillis ?
+b.createdAt.toMillis() : 0;
+
+return bTime - aTime;
+
+});
+
+
+reviewsList.innerHTML = "";
+
+
+let totalRating = 0;
+
+
+reviews.forEach(data => {
 
 const rating =
-Number(data.rating)||0;
+Math.max(
+1,
+Math.min(
+5,
+Math.round(Number(data.rating) || 0)
+)
+);
+
 
 totalRating += rating;
-
-totalReviews++;
 
 
 const card =
 document.createElement("div");
 
-card.className="review-card";
+card.className =
+"review-card";
 
 
 const top =
 document.createElement("div");
 
-top.className="review-top";
+top.className =
+"review-top";
 
 
 const name =
 document.createElement("div");
 
-name.className="review-name";
+name.className =
+"review-name";
 
 name.textContent =
 data.name || "Customer";
@@ -1764,25 +2005,19 @@ data.name || "Customer";
 const stars =
 document.createElement("div");
 
-stars.className="review-stars";
-
-
-const safeRating =
-Math.max(
-0,
-Math.min(5,Math.round(rating))
-);
-
+stars.className =
+"review-stars";
 
 stars.textContent =
-"★".repeat(safeRating)+
-"☆".repeat(5-safeRating);
+"★".repeat(rating) +
+"☆".repeat(5-rating);
 
 
 const text =
 document.createElement("div");
 
-text.className="review-text";
+text.className =
+"review-text";
 
 text.textContent =
 data.feedback || "";
@@ -1791,7 +2026,8 @@ data.feedback || "";
 const date =
 document.createElement("div");
 
-date.className="review-date";
+date.className =
+"review-date";
 
 
 if(data.createdAt){
@@ -1803,22 +2039,32 @@ data.createdAt
 .toDate()
 .toLocaleDateString();
 
-}catch(e){
+}
+catch(error){
 
-date.textContent="Recently";
+date.textContent =
+"Recently";
 
 }
 
-}else{
+}
+else{
 
-date.textContent="Recently";
+date.textContent =
+"Recently";
 
 }
 
 
-top.append(name,stars);
+top.appendChild(name);
 
-card.append(top,text,date);
+top.appendChild(stars);
+
+card.appendChild(top);
+
+card.appendChild(text);
+
+card.appendChild(date);
 
 reviewsList.appendChild(card);
 
@@ -1827,58 +2073,61 @@ reviewsList.appendChild(card);
 
 updateAverageRating(
 totalRating,
-totalReviews
+reviews.length
 );
 
 
-if(totalReviews===0){
+if(reviews.length === 0){
 
 reviewsList.innerHTML =
-"<p class='loading-reviews'>No approved reviews yet. Be the first to review our services!</p>";
+"<p class='loading-reviews'>No customer reviews yet. Be the first to review our services!</p>";
 
 }
 
 
-}catch(error){
+}
+catch(error){
 
 console.error(
-"Firebase Load Error:",
+"Load Reviews Error:",
 error
 );
 
 reviewsList.innerHTML =
-"<p class='loading-reviews'>Unable to load approved reviews.</p>";
+"<p class='loading-reviews'>Unable to load reviews right now.</p>";
 
 }
 
 }
 
 
-/* APPROVED AVERAGE */
+/* AVERAGE RATING */
 
 function updateAverageRating(
 totalRating,
 totalReviews
 ){
 
-const avg =
+const averageElement =
 document.getElementById("averageRating");
 
-const avgStars =
+const starsElement =
 document.getElementById("averageStars");
 
-const total =
+const totalElement =
 document.getElementById("totalReviews");
 
 
-if(totalReviews===0){
+if(totalReviews === 0){
 
-avg.textContent="0.0";
+averageElement.textContent =
+"0.0";
 
-avgStars.textContent="☆☆☆☆☆";
+starsElement.textContent =
+"☆☆☆☆☆";
 
-total.textContent =
-"No approved reviews yet";
+totalElement.textContent =
+"No reviews yet";
 
 return;
 
@@ -1886,10 +2135,10 @@ return;
 
 
 const average =
-totalRating/totalReviews;
+totalRating / totalReviews;
 
 
-avg.textContent =
+averageElement.textContent =
 average.toFixed(1);
 
 
@@ -1897,22 +2146,67 @@ const rounded =
 Math.round(average);
 
 
-avgStars.textContent =
-"★".repeat(rounded)+
+starsElement.textContent =
+"★".repeat(rounded) +
 "☆".repeat(5-rounded);
 
 
-total.textContent =
-totalReviews+
+totalElement.textContent =
+totalReviews +
 (
-totalReviews===1
+totalReviews === 1
 ?
-" Approved Customer Review"
+" Customer Review"
 :
-" Approved Customer Reviews"
+" Customer Reviews"
 );
 
 }
+
+
+/* =====================================================
+   HIDDEN ADMIN ACCESS
+   LOGO PAR 5 QUICK CLICKS
+===================================================== */
+
+let logoClicks = 0;
+
+let logoClickTimer = null;
+
+
+document
+.getElementById("companyLogo")
+.addEventListener("click",function(){
+
+logoClicks++;
+
+
+clearTimeout(logoClickTimer);
+
+
+logoClickTimer =
+setTimeout(function(){
+
+logoClicks = 0;
+
+},2000);
+
+
+if(logoClicks >= 5){
+
+logoClicks = 0;
+
+adminLoginBox.style.display =
+"block";
+
+adminLoginBox.scrollIntoView({
+behavior:"smooth",
+block:"center"
+});
+
+}
+
+});
 
 
 /* ADMIN LOGIN */
@@ -1936,7 +2230,8 @@ document.getElementById("adminPassword")
 adminLoginMessage.textContent =
 "Logging in...";
 
-adminLoginMessage.style.color="#1769e0";
+adminLoginMessage.style.color =
+"#1769e0";
 
 
 try{
@@ -1954,7 +2249,7 @@ if(credential.user.uid !== ADMIN_UID){
 await signOut(auth);
 
 throw new Error(
-"This account is not authorized as administrator."
+"Unauthorized admin account"
 );
 
 }
@@ -1963,17 +2258,23 @@ throw new Error(
 adminLoginMessage.textContent =
 "Admin login successful.";
 
-adminLoginMessage.style.color="green";
+adminLoginMessage.style.color =
+"green";
 
 
-}catch(error){
+}
+catch(error){
 
-console.error("Admin Login Error:",error);
+console.error(
+"Admin Login Error:",
+error
+);
 
 adminLoginMessage.textContent =
-"Admin login failed. Check your email/password.";
+"Invalid admin email or password.";
 
-adminLoginMessage.style.color="red";
+adminLoginMessage.style.color =
+"red";
 
 }
 
@@ -1982,44 +2283,46 @@ adminLoginMessage.style.color="red";
 
 /* AUTH STATE */
 
-onAuthStateChanged(auth,async(user)=>{
+onAuthStateChanged(
+auth,
+async function(user){
 
-if(user && user.uid===ADMIN_UID){
+if(user && user.uid === ADMIN_UID){
 
-adminPanel.style.display="block";
+adminPanel.style.display =
+"block";
 
-await loadPendingReviews();
+await loadAdminReviews();
 
-}else{
+}
+else{
 
-adminPanel.style.display="none";
+adminPanel.style.display =
+"none";
 
 }
 
 });
 
 
-/* LOAD PENDING REVIEWS */
+/* ADMIN LOAD REVIEWS */
 
-async function loadPendingReviews(){
+async function loadAdminReviews(){
 
-const pendingBox =
+const box =
 document.getElementById("pendingReviews");
 
-pendingBox.innerHTML =
-"<p class='pending-empty'>Loading pending feedback...</p>";
+
+box.innerHTML =
+"<p class='pending-empty'>Loading feedback...</p>";
 
 
 try{
 
-const q=query(
-
+const q =
+query(
 collection(db,"feedback"),
-
-where("approved","==",false),
-
-orderBy("createdAt","desc")
-
+where("approved","==",true)
 );
 
 
@@ -2027,38 +2330,64 @@ const snapshot =
 await getDocs(q);
 
 
-pendingBox.innerHTML="";
+const reviews = [];
 
 
-if(snapshot.empty){
+snapshot.forEach(reviewDoc => {
 
-pendingBox.innerHTML =
-"<p class='pending-empty'>No pending feedback.</p>";
+reviews.push({
+
+id: reviewDoc.id,
+
+...reviewDoc.data()
+
+});
+
+});
+
+
+reviews.sort((a,b) => {
+
+const aTime =
+a.createdAt?.toMillis ?
+a.createdAt.toMillis() : 0;
+
+const bTime =
+b.createdAt?.toMillis ?
+b.createdAt.toMillis() : 0;
+
+return bTime - aTime;
+
+});
+
+
+box.innerHTML = "";
+
+
+if(reviews.length === 0){
+
+box.innerHTML =
+"<p class='pending-empty'>No customer feedback found.</p>";
 
 return;
 
 }
 
 
-snapshot.forEach(reviewDoc=>{
-
-const data =
-reviewDoc.data();
-
-const reviewId =
-reviewDoc.id;
-
+reviews.forEach(data => {
 
 const card =
 document.createElement("div");
 
-card.className="pending-card";
+card.className =
+"pending-card";
 
 
 const name =
 document.createElement("div");
 
-name.className="pending-name";
+name.className =
+"pending-name";
 
 name.textContent =
 data.name || "Customer";
@@ -2067,33 +2396,41 @@ data.name || "Customer";
 const rating =
 document.createElement("div");
 
-rating.className="pending-rating";
+rating.className =
+"pending-rating";
+
 
 const safeRating =
 Math.max(
-0,
-Math.min(5,Math.round(Number(data.rating)||0))
+1,
+Math.min(
+5,
+Math.round(Number(data.rating) || 0)
+)
 );
 
+
 rating.textContent =
-"★".repeat(safeRating)+
+"★".repeat(safeRating) +
 "☆".repeat(5-safeRating);
 
 
 const mobile =
 document.createElement("div");
 
-mobile.className="pending-mobile";
+mobile.className =
+"pending-mobile";
 
 mobile.textContent =
-"Mobile: "+
+"Mobile: " +
 (data.mobile || "Not provided");
 
 
 const text =
 document.createElement("div");
 
-text.className="pending-text";
+text.className =
+"pending-text";
 
 text.textContent =
 data.feedback || "";
@@ -2102,114 +2439,78 @@ data.feedback || "";
 const actions =
 document.createElement("div");
 
-actions.className="admin-actions";
+actions.className =
+"admin-actions";
 
 
-const approve =
+const deleteButton =
 document.createElement("button");
 
-approve.className =
-"admin-btn approve-btn";
-
-approve.textContent =
-"✅ Approve";
-
-
-approve.addEventListener(
-"click",
-()=>approveReview(reviewId)
-);
-
-
-const remove =
-document.createElement("button");
-
-remove.className =
+deleteButton.className =
 "admin-btn delete-btn";
 
-remove.textContent =
+deleteButton.textContent =
 "🗑️ Delete";
 
 
-remove.addEventListener(
+deleteButton.addEventListener(
 "click",
-()=>deleteReview(reviewId)
+function(){
+
+deleteReview(data.id);
+
+}
 );
 
 
-actions.append(
-approve,
-remove
-);
+actions.appendChild(deleteButton);
 
 
-card.append(
-name,
-rating,
-mobile,
-text,
-actions
-);
+card.appendChild(name);
+
+card.appendChild(rating);
+
+card.appendChild(mobile);
+
+card.appendChild(text);
+
+card.appendChild(actions);
 
 
-pendingBox.appendChild(card);
+box.appendChild(card);
 
 });
 
 
-}catch(error){
+}
+catch(error){
 
 console.error(
-"Pending Reviews Error:",
+"Admin Reviews Error:",
 error
 );
 
-pendingBox.innerHTML =
-"<p class='pending-empty'>Unable to load pending feedback.</p>";
+box.innerHTML =
+"<p class='pending-empty'>Unable to load feedback.</p>";
 
 }
 
 }
 
 
-/* APPROVE */
-
-async function approveReview(reviewId){
-
-try{
-
-await updateDoc(
-doc(db,"feedback",reviewId),
-{
-approved:true
-}
-);
-
-
-await loadPendingReviews();
-
-await loadApprovedReviews();
-
-
-}catch(error){
-
-console.error(
-"Approve Error:",
-error
-);
-
-alert(
-"Unable to approve this review."
-);
-
-}
-
-}
-
-
-/* DELETE */
+/* DELETE REVIEW */
 
 async function deleteReview(reviewId){
+
+if(!auth.currentUser ||
+auth.currentUser.uid !== ADMIN_UID){
+
+alert("Admin access required.");
+
+return;
+
+}
+
 
 const confirmed =
 confirm(
@@ -2228,12 +2529,18 @@ doc(db,"feedback",reviewId)
 );
 
 
-await loadPendingReviews();
+alert(
+"Feedback deleted successfully."
+);
 
-await loadApprovedReviews();
+
+await loadAdminReviews();
+
+await loadReviews();
 
 
-}catch(error){
+}
+catch(error){
 
 console.error(
 "Delete Error:",
@@ -2261,9 +2568,17 @@ await signOut(auth);
 adminLoginMessage.textContent =
 "Logged out successfully.";
 
-adminLoginMessage.style.color="#1769e0";
+adminLoginMessage.style.color =
+"#1769e0";
 
-}catch(error){
+adminPanel.style.display =
+"none";
+
+adminLoginBox.style.display =
+"none";
+
+}
+catch(error){
 
 console.error(
 "Logout Error:",
@@ -2277,7 +2592,7 @@ error
 
 /* START */
 
-loadApprovedReviews();
+loadReviews();
 
 </script>
 
