@@ -1,1 +1,25 @@
-
+{
+  "name": "HS Bukhari Engineering & HVAC Services",
+  "short_name": "HS Bukhari HVAC",
+  "description": "Professional HVAC & MEP Services in Karachi",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#f3f7fc",
+  "theme_color": "#1769e0",
+  "icons": [
+    {
+      "src": "company-logo.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "company-logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
