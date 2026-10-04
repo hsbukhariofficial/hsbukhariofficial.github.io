@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>HS Bukhari Engineering & HVAC Services | Karachi</title>
+<meta name="description" content="HS Bukhari Engineering & HVAC Services provides professional HVAC, MEP, chiller, AHU, electrical, panel, plumbing and maintenance services in Karachi, Pakistan.">
+<meta name="keywords" content="HVAC Karachi, MEP services Karachi, chiller services Karachi, AHU services, electrical work Karachi, plumbing services, HVAC maintenance, HS Bukhari Engineering">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://bukhariengineering.com/">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="HS Bukhari Engineering & HVAC Services">
+<meta property="og:description" content="Professional HVAC & MEP engineering services in Karachi, Pakistan.">
+<meta property="og:url" content="https://bukhariengineering.com/">
+<meta property="og:image" content="https://bukhariengineering.com/company-profile.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0b5ed7">
+<link rel="manifest" href="./manifest.json">
+
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Arial,Helvetica,sans-serif;background:#f5f8fc;color:#182230;line-height:1.6}
+a{text-decoration:none;color:inherit}
+img{max-width:100%;display:block}
+.container{width:min(1120px,92%);margin:auto}
+
+header{min-height:620px;color:#fff;position:relative;display:flex;align-items:center;overflow:hidden;
+background:linear-gradient(90deg,rgba(3,24,52,.95),rgba(3,39,75,.78),rgba(3,39,75,.45)),url('company-profile.png') center/cover no-repeat}
+.hero{width:min(1120px,92%);margin:auto;padding:80px 0}
+.logo-circle{width:92px;height:92px;border-radius:50%;background:#fff;padding:7px;box-shadow:0 10px 35px rgba(0,0,0,.3);cursor:pointer;margin-bottom:24px}
+.logo-circle img{width:100%;height:100%;object-fit:contain;border-radius:50%}
+.eyebrow{display:inline-block;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.3);padding:7px 14px;border-radius:30px;font-size:13px;font-weight:700;letter-spacing:1px;margin-bottom:16px}
+h1{font-size:clamp(34px,6vw,64px);line-height:1.05;max-width:850px;margin-bottom:18px}
+.hero p{font-size:20px;max-width:720px;color:#e5edf7}
+.badges{display:flex;flex-wrap:wrap;gap:9px;margin:24px 0}
+.badge{padding:8px 13px;border-radius:25px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25);font-size:13px;font-weight:700}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:13px 22px;border-radius:9px;font-weight:700;border:2px solid transparent;transition:.2s}
+.btn:hover{transform:translateY(-2px)}
+.btn-primary{background:#0b79ff;color:#fff}
+.btn-light{background:#fff;color:#07345f}
+.btn-outline{border-color:#fff;color:#fff}
+
+nav{position:sticky;top:0;z-index:50;background:#082d52;color:#fff;box-shadow:0 3px 14px rgba(0,0,0,.12)}
+.nav-inner{width:min(1120px,92%);margin:auto;display:flex;align-items:center;justify-content:space-between;min-height:60px}
+.nav-brand{font-weight:800;font-size:17px}
+.nav-links{display:flex;gap:22px;align-items:center}
+.nav-links a{font-size:14px;font-weight:700;opacity:.95}
+.nav-links a:hover{color:#58b6ff}
+
+section{padding:75px 0}
+.section-title{text-align:center;margin-bottom:42px}
+.section-title h2{font-size:34px;color:#082d52;margin-bottom:8px}
+.section-title p{color:#68788a;max-width:700px;margin:auto}
+
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.card{background:#fff;border-radius:14px;padding:25px;box-shadow:0 7px 25px rgba(18,47,75,.08);border:1px solid #e4ebf2;transition:.2s}
+.card:hover{transform:translateY(-4px);box-shadow:0 12px 30px rgba(18,47,75,.13)}
+.icon{font-size:32px;margin-bottom:12px}
+.card h3{color:#08355f;margin-bottom:8px}
+.card p{color:#68788a;font-size:14px}
+
+.about-grid,.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:35px;align-items:center}
+.about-box{background:#fff;padding:32px;border-radius:16px;box-shadow:0 7px 25px rgba(18,47,75,.08)}
+.about-box h3{font-size:27px;color:#082d52;margin-bottom:14px}
+.about-box p{color:#596979;margin-bottom:12px}
+
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:15px;margin-top:25px}
+.stat{background:#082d52;color:#fff;padding:22px;border-radius:12px;text-align:center}
+.stat strong{display:block;font-size:25px}
+.stat span{font-size:13px;color:#d6e4f3}
+
+.why{background:#eaf3fb}
+.why-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.why-item{background:#fff;padding:22px;border-radius:12px;border-left:5px solid #0b79ff}
+.why-item h3{color:#082d52;margin-bottom:5px}
+.why-item p{color:#667585;font-size:14px}
+
+.document{background:linear-gradient(135deg,#082d52,#0b5ed7);color:#fff;border-radius:18px;padding:35px;display:flex;justify-content:space-between;align-items:center;gap:25px}
+
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.gallery-item{height:230px;border-radius:13px;overflow:hidden;background:#e5edf5;cursor:pointer}
+.gallery-item img{width:100%;height:100%;object-fit:cover;transition:.3s}
+.gallery-item:hover img{transform:scale(1.04)}
+
+.quote{background:linear-gradient(135deg,#06284a,#0b5ed7);color:#fff;text-align:center;border-radius:18px;padding:55px 25px}
+.quote h2{font-size:34px;margin-bottom:10px}
+.quote p{color:#dbe9f7;margin-bottom:22px}
+
+.contact-card{background:#fff;padding:30px;border-radius:16px;box-shadow:0 7px 25px rgba(18,47,75,.08)}
+.contact-row{display:flex;gap:13px;margin:16px 0;align-items:flex-start}
+.contact-row b{display:block;color:#082d52}
+.contact-row span{color:#657585;font-size:14px}
+.qr{max-width:220px;margin:auto}
+
+form{display:grid;gap:12px}
+input,textarea{width:100%;padding:13px;border:1px solid #d4dee8;border-radius:8px;font:inherit;background:#fff}
+textarea{min-height:130px;resize:vertical}
+button{cursor:pointer;border:0}
+
+.feedback-list{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.review{background:#fff;padding:22px;border-radius:13px;box-shadow:0 7px 22px rgba(18,47,75,.07)}
+.review strong{color:#082d52}
+.stars{color:#f2a900;margin:6px 0}
+.review p{font-size:14px;color:#657585}
+
+footer{background:#061e35;color:#d8e5f1;padding:45px 0 25px;margin-top:70px}
+.footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:30px}
+footer h3{color:#fff;margin-bottom:12px}
+footer p,footer a{font-size:14px;color:#b8c9d9}
+.copyright{text-align:center;border-top:1px solid rgba(255,255,255,.12);margin-top:30px;padding-top:20px;font-size:13px}
+
+.float-wa{position:fixed;right:18px;bottom:18px;width:56px;height:56px;border-radius:50%;background:#20c767;color:#fff;display:flex;align-items:center;justify-content:center;font-size:27px;box-shadow:0 6px 20px rgba(0,0,0,.25);z-index:100}
+
+.modal{display:none;position:fixed;inset:0;background:rgba(0,0,0,.82);z-index:200;align-items:center;justify-content:center;padding:20px}
+.modal img{max-width:95%;max-height:90vh;border-radius:10px}
+.modal.show{display:flex}
+.close{position:absolute;right:25px;top:15px;color:#fff;font-size:38px;cursor:pointer}
+
+.admin-box{display:none;background:#fff;padding:25px;border-radius:14px;margin-top:20px}
+.admin-box.show{display:block}
+.admin-review{display:flex;justify-content:space-between;gap:10px;padding:12px;border-bottom:1px solid #ddd}
+.delete{background:#dc3545;color:#fff;padding:7px 10px;border-radius:6px}
+
+@media(max-width:900px){
+.grid{grid-template-columns:repeat(2,1fr)}
+.stats{grid-template-columns:repeat(2,1fr)}
+.feedback-list{grid-template-columns:1fr 1fr}
+.gallery{grid-template-columns:1fr 1fr}
+.nav-links{gap:11px}
+}
+@media(max-width:650px){
+header{min-height:650px}
+.hero{padding:60px 0}
+.nav-inner{padding:8px 0;display:block}
+.nav-brand{text-align:center;margin-bottom:8px}
+.nav-links{justify-content:center;flex-wrap:wrap;gap:8px}
+.nav-links a{font-size:12px}
+.grid,.why-grid,.about-grid,.contact-grid,.gallery,.feedback-list,.footer-grid{grid-template-columns:1fr}
+.stats{grid-template-columns:1fr 1fr}
+.document{display:block;text-align:center}
+.document .btn{margin-top:18px}
+h1{font-size:38px}
+}
+</style>
+
+<script type="application/ld+json">
+{
+ "@context":"https://schema.org",
+ "@type":"HVACBusiness",
+ "name":"HS Bukhari Engineering & HVAC Services",
+ "url":"https://bukhariengineering.com/",
+ "telephone":"+923711375247",
+ "email":"hs.Bukhari.oficial2025@gmail.com",
+ "image":"https://bukhariengineering.com/company-profile.png",
+ "areaServed":"Karachi, Pakistan",
+ "description":"Professional HVAC, MEP, chiller, AHU, electrical, plumbing and maintenance services.",
+ "serviceType":["HVAC Installation","Chiller Services","AHU Services","Electrical Work","Panel Work","Plumbing Services","HVAC Maintenance","MEP Engineering"]
+}
+</script>
+</head>
+
+<body>
+
+<header id="home">
+<div class="hero">
+<div class="logo-circle" onclick="openImage('company-profile.png')" title="View company profile image">
+<img src="company-logo.png" alt="HS Bukhari Engineering Services Logo">
+</div>
+<div class="eyebrow">PROFESSIONAL HVAC & MEP ENGINEERING</div>
+<h1>HS BUKHARI ENGINEERING & HVAC SERVICES</h1>
+<p>Reliable HVAC, MEP and engineering solutions for commercial, industrial and site projects in Karachi.</p>
+<div class="badges">
+<span class="badge">HVAC</span><span class="badge">MEP</span><span class="badge">CHILLER</span><span class="badge">AHU</span><span class="badge">ELECTRICAL</span><span class="badge">PLUMBING</span>
+</div>
+<div class="actions">
+<a class="btn btn-primary" href="#quote">Get a Free Quote</a>
+<a class="btn btn-light" href="https://wa.me/923711375247?text=Assalam%20o%20Alaikum%2C%20I%20need%20an%20HVAC%2FMEP%20service%20quotation." target="_blank" rel="noopener">WhatsApp Us</a>
+<a class="btn btn-outline" href="tel:+923711375247">Call Now</a>
+</div>
+</div>
+</header>
+
+<nav>
+<div class="nav-inner">
+<div class="nav-brand">HS Bukhari Engineering</div>
+<div class="nav-links">
+<a href="#about">About</a><a href="#services">Services</a><a href="#why">Why Us</a><a href="#projects">Projects</a><a href="#quote">Quote</a><a href="#feedback">Feedback</a><a href="#contact">Contact</a>
+</div>
+</div>
+</nav>
+
+<main>
+
+<section id="about">
+<div class="container">
+<div class="section-title"><h2>About Us</h2><p>Engineering-focused HVAC and MEP services with practical site support.</p></div>
+<div class="about-grid">
+<div class="about-box">
+<h3>Professional HVAC & MEP Solutions</h3>
+<p>HS Bukhari Engineering & HVAC Services provides HVAC, MEP, chiller, AHU, electrical, panel, plumbing and maintenance solutions for commercial and site requirements.</p>
+<p>Our focus is on reliable installation, troubleshooting, preventive maintenance and professional site execution.</p>
+</div>
+<div class="about-box">
+<h3>Service Coverage</h3>
+<p>📍 Karachi, Pakistan</p>
+<p>☎️ <a href="tel:+923711375247">+92 371 1375247</a></p>
+<p>✉️ <a href="mailto:hs.Bukhari.oficial2025@gmail.com">hs.Bukhari.oficial2025@gmail.com</a></p>
+<p>💬 <a href="https://wa.me/923711375247" target="_blank" rel="noopener">WhatsApp Business Contact</a></p>
+</div>
+</div>
+<div class="stats">
+<div class="stat"><strong>HVAC</strong><span>Professional Services</span></div>
+<div class="stat"><strong>MEP</strong><span>Engineering Services</span></div>
+<div class="stat"><strong>2025</strong><span>Service Experience</span></div>
+<div class="stat"><strong>Karachi</strong><span>Service Area</span></div>
+</div>
+</div>
+</section>
+
+<section id="services" style="background:#eef5fb">
+<div class="container">
+<div class="section-title"><h2>Our Services</h2><p>Complete engineering and building-services support.</p></div>
+<div class="grid">
+<div class="card"><div class="icon">❄️</div><h3>HVAC Installation</h3><p>Air-conditioning installation, commissioning, troubleshooting and system support.</p></div>
+<div class="card"><div class="icon">🏭</div><h3>Chiller Services</h3><p>Chiller system inspection, servicing, troubleshooting and maintenance support.</p></div>
+<div class="card"><div class="icon">💨</div><h3>AHU Services</h3><p>AHU installation, servicing, air-side inspection and maintenance.</p></div>
+<div class="card"><div class="icon">⚡</div><h3>Electrical Work</h3><p>Electrical installation, maintenance, fault finding and site support.</p></div>
+<div class="card"><div class="icon">🔌</div><h3>Panel Work</h3><p>Electrical panel installation, checking, maintenance and related site work.</p></div>
+<div class="card"><div class="icon">🚰</div><h3>Plumbing Services</h3><p>Plumbing installation, maintenance, repairs and building-services support.</p></div>
+<div class="card"><div class="icon">🛠️</div><h3>Maintenance Services</h3><p>Preventive and corrective maintenance for HVAC and MEP systems.</p></div>
+<div class="card"><div class="icon">🏗️</div><h3>Commercial & Site Work</h3><p>Engineering support for commercial buildings and technical site projects.</p></div>
+</div>
+</div>
+</section>
+
+<section id="why">
+<div class="container">
+<div class="section-title"><h2>Why Choose HS Bukhari</h2><p>Practical engineering support with a focus on quality and dependable service.</p></div>
+<div class="why-grid">
+<div class="why-item"><h3>✓ Technical Approach</h3><p>Solutions are focused on proper system operation, safety and maintainability.</p></div>
+<div class="why-item"><h3>✓ HVAC & MEP Coverage</h3><p>Multiple building-services disciplines are available through one service provider.</p></div>
+<div class="why-item"><h3>✓ Site-Focused Support</h3><p>Suitable for installation, troubleshooting, maintenance and commercial site requirements.</p></div>
+<div class="why-item"><h3>✓ Direct Communication</h3><p>Contact directly by phone, WhatsApp or email for quotations and service inquiries.</p></div>
+</div>
+</div>
+</section>
+
+<section>
+<div class="container">
+<div class="document">
+<div><h2>Company / Project Document</h2><p>View the available HS Bukhari HVAC & MEP installation document.</p></div>
+<a class="btn btn-light" href="HS_Bukhari_HVAC_MEP_Installation_Work.pdf" target="_blank" rel="noopener">View PDF</a>
+</div>
+</div>
+</section>
+
+<section id="projects">
+<div class="container">
+<div class="section-title"><h2>Site Work & Projects</h2><p>Selected site-work images from HS Bukhari Engineering.</p></div>
+<div class="gallery" id="gallery"></div>
+</div>
+</section>
+
+<section id="quote">
+<div class="container">
+<div class="quote">
+<h2>Need HVAC or MEP Service?</h2>
+<p>Contact us for your project requirement, maintenance work or quotation.</p>
+<div class="actions" style="justify-content:center">
+<a class="btn btn-light" href="https://wa.me/923711375247?text=Assalam%20o%20Alaikum%2C%20please%20send%20me%20a%20quotation." target="_blank" rel="noopener">WhatsApp for Quote</a>
+<a class="btn btn-outline" href="mailto:hs.Bukhari.oficial2025@gmail.com?subject=Free%20Quote%20Request">Email for Quote</a>
+<a class="btn btn-outline" href="tel:+923711375247">Call Now</a>
+</div>
+</div>
+</div>
+</section>
+
+<section id="feedback" style="background:#eef5fb">
+<div class="container">
+<div class="section-title"><h2>Customer Feedback</h2><p>Share your experience with HS Bukhari Engineering.</p></div>
+<div class="contact-grid">
+<div class="contact-card">
+<form id="feedbackForm">
+<input id="reviewName" type="text" placeholder="Your Name" required>
+<input id="reviewRating" type="number" min="1" max="5" placeholder="Rating (1-5)" required>
+<textarea id="reviewText" placeholder="Your feedback" required></textarea>
+<button class="btn btn-primary" type="submit">Submit Feedback</button>
+<div id="feedbackMsg"></div>
+</form>
+</div>
+<div><div class="feedback-list" id="feedbackList"></div></div>
+</div>
+<div class="admin-box" id="adminBox">
+<h3>Admin Feedback Panel</h3>
+<p style="margin:8px 0 15px;color:#667585">Logged-in administrator can remove feedback.</p>
+<div id="adminReviews"></div>
+</div>
+</div>
+</section>
+
+<section id="contact">
+<div class="container">
+<div class="section-title"><h2>Contact Us</h2><p>Get in touch for HVAC, MEP and engineering services in Karachi.</p></div>
+<div class="contact-grid">
+<div class="contact-card">
+<div class="contact-row"><div>📍</div><div><b>Location</b><span>Karachi, Pakistan</span></div></div>
+<div class="contact-row"><div>📞</div><div><b>Phone</b><span><a href="tel:+923711375247">+92 371 1375247</a></span></div></div>
+<div class="contact-row"><div>💬</div><div><b>WhatsApp</b><span><a href="https://wa.me/923711375247" target="_blank" rel="noopener">Chat on WhatsApp</a></span></div></div>
+<div class="contact-row"><div>✉️</div><div><b>Email</b><span><a href="mailto:hs.Bukhari.oficial2025@gmail.com">hs.Bukhari.oficial2025@gmail.com</a></span></div></div>
+</div>
+<div class="contact-card" style="text-align:center">
+<h3 style="color:#082d52;margin-bottom:15px">WhatsApp / Contact QR</h3>
+<img class="qr" src="qr-code.png" alt="HS Bukhari Engineering contact QR code" loading="lazy">
+</div>
+</div>
+</div>
+</section>
+
+</main>
+
+<footer>
+<div class="container">
+<div class="footer-grid">
+<div><h3>HS Bukhari Engineering & HVAC Services</h3><p>Professional HVAC, MEP, chiller, AHU, electrical, plumbing and maintenance services in Karachi.</p></div>
+<div><h3>Quick Links</h3><p><a href="#services">Services</a></p><p><a href="#projects">Projects</a></p><p><a href="#quote">Get a Quote</a></p><p><a href="#contact">Contact</a></p></div>
+<div><h3>Contact</h3><p>Karachi, Pakistan</p><p><a href="tel:+923711375247">+92 371 1375247</a></p><p><a href="mailto:hs.Bukhari.oficial2025@gmail.com">hs.Bukhari.oficial2025@gmail.com</a></p></div>
+</div>
+<div class="copyright">© <span id="year"></span> HS Bukhari Engineering & HVAC Services. All Rights Reserved.</div>
+</div>
+</footer>
+
+<a class="float-wa" href="https://wa.me/923711375247" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">◉</a>
+
+<div class="modal" id="imageModal" onclick="closeImage(event)">
+<span class="close">&times;</span><img id="modalImage" src="" alt="Project image">
+</div>
+
+<script type="module">
+import { initializeApp } from "https://www.gstatic.com/firebasejs/12.18.0/firebase-app.js";
+import { getFirestore, collection, addDoc, getDocs, query, orderBy, deleteDoc, doc } from "https://www.gstatic.com/firebasejs/12.18.0/firebase-firestore.js";
+import { getAuth, signInAnonymously, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/12.18.0/firebase-auth.js";
+
+const firebaseConfig={
+apiKey:"AIzaSyCY_h_nZdnTEkGcQMwzsaqKkNA_VR6qsAI",
+authDomain:"hs-bukhariengineering-services.firebaseapp.com",
+projectId:"hs-bukhariengineering-services",
+storageBucket:"hs-bukhariengineering-services.firebasestorage.app",
+messagingSenderId:"361274097524",
+appId:"1:361274097524:web:84e94bf126fc978fcdb621",
+measurementId:"G-Z9DJLYB7W2"
+};
+
+const app=initializeApp(firebaseConfig);
+const db=getFirestore(app);
+const auth=getAuth(app);
+const ADMIN_UID="mRv0iCET47UfER6lRLRVc8v9JBe2";
+let currentUser=null;
+
+try{await signInAnonymously(auth)}catch(e){console.warn(e)}
+onAuthStateChanged(auth,u=>{currentUser=u});
+
+const feedbackList=document.getElementById("feedbackList");
+const adminBox=document.getElementById("adminBox");
+const adminReviews=document.getElementById("adminReviews");
+
+async function loadFeedback(){
+feedbackList.innerHTML="<p>Loading feedback...</p>";
+try{
+const q=query(collection(db,"feedback"),orderBy("createdAt","desc"));
+const snap=await getDocs(q);
+const rows=[];
+snap.forEach(d=>{const x=d.data();if(x.approved!==false)rows.push({id:d.id,...x})});
+feedbackList.innerHTML=rows.length?rows.slice(0,6).map(x=>`
+<div class="review"><strong>${escapeHtml(x.name||"Customer")}</strong>
+<div class="stars">${"★".repeat(Math.min(5,Math.max(1,Number(x.rating)||5)))}</div>
+<p>${escapeHtml(x.text||"")}</p></div>`).join(""):"<p>No feedback yet. Be the first to share your experience.</p>";
+if(currentUser&&currentUser.uid===ADMIN_UID)renderAdmin(rows);
+}catch(e){console.error(e);feedbackList.innerHTML="<p>Feedback is temporarily unavailable.</p>"}
+}
+
+function renderAdmin(rows){
+adminBox.classList.add("show");
+adminReviews.innerHTML=rows.length?rows.map(x=>`
+<div class="admin-review"><div><b>${escapeHtml(x.name||"Customer")}</b><br>${escapeHtml(x.text||"")}</div>
+<button class="delete" data-id="${x.id}">Delete</button></div>`).join(""):"<p>No reviews.</p>";
+adminReviews.querySelectorAll(".delete").forEach(btn=>btn.onclick=async()=>{
+if(!confirm("Delete this feedback?"))return;
+try{await deleteDoc(doc(db,"feedback",btn.dataset.id));loadFeedback()}catch(e){alert("Delete failed.")}
+});
+}
+
+document.getElementById("feedbackForm").addEventListener("submit",async e=>{
+e.preventDefault();
+const msg=document.getElementById("feedbackMsg");
+msg.textContent="Submitting...";
+try{
+await addDoc(collection(db,"feedback"),{
+name:document.getElementById("reviewName").value.trim(),
+rating:Number(document.getElementById("reviewRating").value),
+text:document.getElementById("reviewText").value.trim(),
+approved:true,
+createdAt:Date.now()
+});
+e.target.reset();
+msg.textContent="Thank you. Your feedback has been submitted.";
+loadFeedback();
+}catch(err){console.error(err);msg.textContent="Unable to submit feedback. Please try again."}
+});
+
+function escapeHtml(s){
+return String(s).replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[m]))
+}
+loadFeedback();
+
+let clickCount=0,clickTimer;
+document.querySelector(".logo-circle").addEventListener("click",()=>{
+clickCount++;clearTimeout(clickTimer);clickTimer=setTimeout(()=>clickCount=0,1500);
+if(clickCount>=5){
+clickCount=0;
+const uid=prompt("Admin UID:");
+if(uid===ADMIN_UID){adminBox.classList.add("show");loadFeedback();alert("Admin panel opened.")}
+else if(uid!==null)alert("Invalid Admin UID.");
+}
+});
+</script>
+
+<script>
+document.getElementById("year").textContent=new Date().getFullYear();
+
+const gallery=document.getElementById("gallery");
+const images=["site-work.png","site-work-1.png","site-work-2.png","site-work-3.png","site-work-4.png","site-work-5.png","site-work-6.png","site-work-7.png","site-work-8.png","site-work-9.png","site-work-10.png","site-work-11.png"];
+
+images.forEach((src,i)=>{
+const box=document.createElement("div");box.className="gallery-item";
+const img=document.createElement("img");img.src=src;img.alt="HS Bukhari Engineering site work project "+(i+1);img.loading="lazy";
+img.onerror=()=>box.remove();box.appendChild(img);box.onclick=()=>openImage(src);gallery.appendChild(box);
+});
+
+function openImage(src){document.getElementById("modalImage").src=src;document.getElementById("imageModal").classList.add("show")}
+function closeImage(e){if(e.target.id==="imageModal"||e.target.classList.contains("close"))document.getElementById("imageModal").classList.remove("show")}
+document.addEventListener("keydown",e=>{if(e.key==="Escape")document.getElementById("imageModal").classList.remove("show")});
+
+if("serviceWorker" in navigator)window.addEventListener("load",()=>navigator.serviceWorker.register("./service-worker.js").catch(()=>{}));
+</script>
+</body>
+</html>
